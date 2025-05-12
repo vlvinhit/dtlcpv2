@@ -18,6 +18,8 @@ use App\Http\Controllers\Admin\QLKhuyenNghiController;
 use App\Http\Controllers\Admin\QLCanhBaoController;
 use App\Http\Controllers\Admin\NhomCHCTLController;
 use App\Http\Controllers\Admin\QLCauHoiController;
+use App\Http\Controllers\AssessmentController;
+use App\Http\Controllers\HealthAssessmentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -81,8 +83,8 @@ Route::middleware(['auth'])->group(function (){
         Route::get('/quanlydiemdichv2/edit/{qldiemdichv2}',[QLDiemDichv2Controller::class, 'show']);
         Route::post('/quanlydiemdichv2/editqldiemdichv2',[QLDiemDichv2Controller::class, 'update']);
         #PHIEUDDBenh
-        Route::resource('/phieududoanbenh', PhieuDDBenhController::class);
-        Route::post('/phieududoanbenh/addphieududoanbenh',[PhieuDDBenhController::class, 'store']);
+        Route::resource('/phieududoanbenh2', PhieuDDBenhController::class);
+        Route::post('/phieududoanbenh2/addphieududoanbenh',[PhieuDDBenhController::class, 'store']);
 
         #QLDonVi
         Route::resource('/quanlydonvi', QLDonViController::class);
@@ -127,6 +129,14 @@ Route::middleware(['auth'])->group(function (){
         Route::get('/editQLCauHoi/{quanlycauhoi}',[QLCauHoiController::class, 'show']);
         Route::post('/editQLCauHoi',[QLCauHoiController::class, 'update']);
         Route::post('/destroyQLCauHoi',[QLCauHoiController::class, 'destroy']);
-    });
+        #ATSH
+        Route::get('/antoansinhhoc', [AssessmentController::class, 'index'])->name('assessment.index');
+        Route::post('/antoansinhhoc/submit', [AssessmentController::class, 'submit'])->name('assessment.submit');
+        Route::get('/antoansinhhoc/results', [AssessmentController::class, 'results'])->name('assessment.results');
 
+        Route::get('/phieududoanbenh', [HealthAssessmentController::class, 'index'])->name('health-assessment.index');
+        Route::post('/phieududoanbenh/submit', [HealthAssessmentController::class, 'submit'])->name('health-assessment.submit');
+        Route::get('/phieududoanbenh/results', [HealthAssessmentController::class, 'results'])->name('health-assessment.results');
+    });
+    Route::get('/bandogis/gis4', [QLGisController::class, 'index2']);
 });
