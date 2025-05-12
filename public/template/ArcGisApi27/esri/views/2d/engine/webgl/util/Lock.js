@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../../chunks/_rollupPluginBabelHelpers","../../../../../core/promiseUtils"],function(c,e,f){let g=function(){function a(){this._resolver=null}var b=a.prototype;b.isHeld=function(){return!!this._resolver};b.acquire=async function(){this._resolver?(await this._resolver.promise,await this.acquire()):this._resolver=f.createResolver()};b.release=function(){const d=this._resolver;this._resolver=null;d?.resolve()};return e._createClass(a)}();c.Lock=g;c.withLock=async function(a,
+b,d){try{await a.acquire(),await b(d),a.release()}catch(h){throw a.release(),h;}};Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

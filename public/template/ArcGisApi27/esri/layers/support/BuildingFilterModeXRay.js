@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ./BuildingFilterMode".split(" "),function(d,e,h,a,m,n,k,l){var b;a=b=function(f){function c(){var g=f.apply(this,arguments)||this;g.type="x-ray";return g}d._inherits(c,f);c.prototype.clone=function(){return new b};return d._createClass(c)}(l);e.__decorate([h.property({type:["x-ray"],
+readOnly:!0,json:{write:!0}})],a.prototype,"type",void 0);return a=b=e.__decorate([k.subclass("esri.layers.support.BuildingFilterModeXRay")],a)});

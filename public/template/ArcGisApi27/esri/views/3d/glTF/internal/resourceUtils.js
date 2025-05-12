@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../webgl-engine/lib/basicInterfaces"],function(d,q,l){let m=q._createClass(function(b){this.data=b;this.type="encoded-mesh-texture";this.encoding=l.TextureEncodingMimeType.KTX2_ENCODING});d.EncodedMeshTexture=m;d.imageFromBinaryData=async function(b,g){return g===l.TextureEncodingMimeType.KTX2_ENCODING?new m(b):new Promise((e,h)=>{const c=new Blob([b],{type:g}),f=URL.createObjectURL(c),a=new Image,n=()=>{URL.revokeObjectURL(f);"decode"in
+a?a.decode().then(()=>e(a),()=>e(a)).then(k):(e(a),k())},p=r=>{URL.revokeObjectURL(f);h(r);k()},k=()=>{a.removeEventListener("load",n);a.removeEventListener("error",p)};a.addEventListener("load",n);a.addEventListener("error",p);a.src=f})};d.isEncodedMeshTexture=function(b){return"encoded-mesh-texture"===b?.type};d.jsonFromBinaryData=async function(b){return new Promise((g,e)=>{const h=new Blob([b]),c=new FileReader;c.onload=()=>{g(JSON.parse(c.result))};c.onerror=f=>{e(f)};c.readAsText(h)})};Object.defineProperty(d,
+Symbol.toStringTag,{value:"Module"})});

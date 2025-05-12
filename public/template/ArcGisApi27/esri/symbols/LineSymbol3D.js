@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../chunks/_rollupPluginBabelHelpers ../chunks/tslib.es6 ../core/Collection ../core/lang ../core/accessorSupport/decorators/property ../core/accessorSupport/ensureType ../core/accessorSupport/decorators/enumeration ../core/accessorSupport/decorators/subclass ./LineSymbol3DLayer ./PathSymbol3DLayer ./Symbol3D".split(" "),function(k,f,c,g,p,t,q,r,h,l,b){var d;const m=c.ofType({base:null,key:"type",typeMap:{line:h,path:l}});c=c.ofType({base:null,key:"type",typeMap:{line:h,path:l}});b=d=function(n){function e(a){a=
+n.call(this,a)||this;a.symbolLayers=new m;a.type="line-3d";return a}k._inherits(e,n);e.prototype.clone=function(){return new d({styleOrigin:g.clone(this.styleOrigin),symbolLayers:g.clone(this.symbolLayers),thumbnail:g.clone(this.thumbnail)})};e.fromSimpleLineSymbol=function(a){return new d({symbolLayers:[h.fromSimpleLineSymbol(a)]})};return k._createClass(e)}(b);f.__decorate([p.property({type:m,json:{type:c}})],b.prototype,"symbolLayers",void 0);f.__decorate([q.enumeration({LineSymbol3D:"line-3d"},
+{readOnly:!0})],b.prototype,"type",void 0);return b=d=f.__decorate([r.subclass("esri.symbols.LineSymbol3D")],b)});

@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/lang ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/accessorSupport/decorators/subclass ./AlgorithmicColorRamp ./ColorRamp".split(" "),function(f,c,k,g,a,l,m,n){var d;a=d=function(h){function e(b){b=h.call(this,b)||this;b.colorRamps=null;b.type="multipart";return b}f._inherits(e,h);e.prototype.clone=function(){return new d({colorRamps:k.clone(this.colorRamps)})};return f._createClass(e)}(n);
+c.__decorate([g.property({type:[m],json:{write:!0}})],a.prototype,"colorRamps",void 0);c.__decorate([g.property({type:["multipart"]})],a.prototype,"type",void 0);return a=d=c.__decorate([l.subclass("esri.rest.support.MultipartColorRamp")],a)});

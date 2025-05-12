@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/JSONSupport ../../core/lang ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/accessorSupport/decorators/subclass ./SearchTableField".split(" "),function(f,c,a,k,g,n,l,m){var d;a=d=function(h){function e(b){b=h.call(this,b)||this;b.field=null;b.id=null;return b}f._inherits(e,h);e.prototype.clone=function(){return new d(k.clone({field:this.field,id:this.id}))};return f._createClass(e)}(a.JSONSupport);
+c.__decorate([g.property({type:m,json:{write:{isRequired:!0}}})],a.prototype,"field",void 0);c.__decorate([g.property({type:String,json:{write:{isRequired:!0}}})],a.prototype,"id",void 0);return a=d=c.__decorate([l.subclass("esri.webdoc.applicationProperties.SearchTable")],a)});

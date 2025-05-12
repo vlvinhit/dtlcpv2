@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers","../../../chunks/vec2f64"],function(a,d,e){let l=function(){function b(){this.offset=e.create();this.scale=0;this.tile=null}var c=b.prototype;c.init=function(f,g,h,k){this.tile=f;this.offset[0]=g;this.offset[1]=h;this.scale=k};c.dispose=function(){this.tile=null;this.offset[0]=0;this.scale=this.offset[1]=0};return d._createClass(b)}();a.UpsampleInfo=l;Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

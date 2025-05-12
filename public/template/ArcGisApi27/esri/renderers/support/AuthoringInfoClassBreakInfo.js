@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(a,f,c,k,g,m,n,p,l){var d;a.AuthoringInfoClassBreakInfo=d=function(h){function e(b){b=h.call(this,b)||this;b.minValue=0;b.maxValue=0;return b}f._inherits(e,h);e.prototype.clone=function(){return new d({minValue:this.minValue,
+maxValue:this.maxValue})};return f._createClass(e)}(k.JSONSupport);c.__decorate([g.property({type:Number,json:{write:!0}})],a.AuthoringInfoClassBreakInfo.prototype,"minValue",void 0);c.__decorate([g.property({type:Number,json:{write:!0}})],a.AuthoringInfoClassBreakInfo.prototype,"maxValue",void 0);a.AuthoringInfoClassBreakInfo=d=c.__decorate([l.subclass("esri.renderer.support.AuthoringInfoClassBreakInfo")],a.AuthoringInfoClassBreakInfo);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

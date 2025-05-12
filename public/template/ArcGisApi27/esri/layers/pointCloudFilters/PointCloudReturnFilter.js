@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/lang ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/accessorSupport/decorators/enumeration ../../core/accessorSupport/decorators/subclass ./PointCloudFilter".split(" "),function(f,c,h,k,a,l,m,n){var d;a=d=function(g){function e(b){b=g.call(this,b)||this;b.includedReturns=[];b.type="return";return b}f._inherits(e,g);e.prototype.clone=function(){return new d({field:this.field,
+includedReturns:h.clone(this.includedReturns)})};return f._createClass(e)}(n);c.__decorate([k.property({type:[["firstOfMany","last","lastOfMany","single"]],json:{write:{enabled:!0,isRequired:!0}}})],a.prototype,"includedReturns",void 0);c.__decorate([l.enumeration({pointCloudReturnFilter:"return"})],a.prototype,"type",void 0);return a=d=c.__decorate([m.subclass("esri.layers.pointCloudFilters.PointCloudReturnFilter")],a)});

@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../support/elevationInfoUtils"],function(d,f){d.canMoveZ=function(a,c=f.getGraphicEffectiveElevationInfo(a)){return"on-the-ground"!==c.mode&&null!=a.geometry&&a.geometry.hasZ?!0:!1};d.disableDisplayOnGrab=function(a,c){let b=null;const g=a.events.on("grab-changed",e=>{null!=b&&(b.remove(),b=null);"start"===e.action&&(b=a.disableDisplay());c&&c(e)});return{remove(){null!=b&&b.remove();g.remove()}}};Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

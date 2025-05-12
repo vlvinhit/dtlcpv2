@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/enumeration ../../core/accessorSupport/decorators/subclass ../../intl/date".split(" "),function(d,c,a,e,m,n,p,h,k,l){a=function(f){function g(b){b=f.call(this,b)||this;b.dateFormat=null;b.digitSeparator=!1;b.places=null;return b}d._inherits(g,f);return d._createClass(g)}(a.JSONSupport);
+c.__decorate([h.enumeration(l.dateFormatJSONMap)],a.prototype,"dateFormat",void 0);c.__decorate([e.property()],a.prototype,"digitSeparator",void 0);c.__decorate([e.property()],a.prototype,"places",void 0);return a=c.__decorate([k.subclass("esri.widgets.FeatureForm.Format")],a)});

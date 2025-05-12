@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../geometry ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ../../core/accessorSupport/decorators/writer ../../geometry/Point".split(" "),function(f,c,b,l,g,m,u,v,n,p,q){var d;b=d=function(h){function e(){var a=h.apply(this,arguments)||this;a.geometries=null;a.rasterId=null;return a}
+f._inherits(e,h);var k=e.prototype;k.writeGeometry=function(a,r,w){r.geometries={geometryType:"esriGeometryPoint",geometries:a.map(t=>t.toJSON())}};k.clone=function(){return new d({geometries:this.geometries?.map(a=>a.clone())??[],rasterId:this.rasterId})};return f._createClass(e)}(l.JSONSupport);c.__decorate([g.property({type:[q],json:{write:!0}})],b.prototype,"geometries",void 0);c.__decorate([p.writer("geometries")],b.prototype,"writeGeometry",null);c.__decorate([g.property({type:m.Integer,json:{write:!0}})],
+b.prototype,"rasterId",void 0);return b=d=c.__decorate([n.subclass("esri.rest.support.ImagePixelLocationParameters")],b)});

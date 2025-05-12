@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../geometry ../OrientedImageryLayer ./core/ExposurePoint ../../rest/support/Query ../../geometry/Extent".split(" "),function(g,t,m,n,p,q){function k(a){return c=>{const {features:h,spatialReference:d}=c;h.forEach(e=>{e.geometry&&(e.geometry.spatialReference=d);const b=n.fromJSON({...e.toJSON(),layer:a});b&&(e.attributes=b);e.layer=a;e.spatialReference=d});return c}}function l(a,c){return new q({xmin:a.x-c,xmax:a.x+c,ymin:a.y-c,ymax:a.y+c,spatialReference:a.spatialReference})}const f=
+{};g.createExtentFromPointAtDistance=l;g.searchImages=async function(a,c){const {point:h,queryParams:d,queryFeatures:e}=a;var b={};a=a.layerInstanceOrURL;d&&(b.maxRecordCountFactor=d.maxRecordCountFactor??5,b.outFields=d.outFields??["*"],b.where=d.where??"1\x3d1",b.returnGeometry=d.returnGeometry??!0);"string"===typeof a&&(f.layer&&f.layer.url===a?a=f.layer:(f.layer?.destroy(),a=f.layer=new m({url:a}),await a.load()));if(a){if(e&&"esri.layers.OrientedImageryLayer"===a?.declaredClass)return k(a)(e);
+const r=l(h,d?.maximumDistance??a.maximumDistance??1E3);b=new p({geometry:r,...b});return a.queryFeatures(b,c).then(k(a))}return null};Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

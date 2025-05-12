@@ -16,6 +16,8 @@
         <tbody>
         <div class="card-footer">
             <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#themQLDiemDich">Thêm điểm dịch</button>
+{{--            <button type="submit" class="btn btn-primary pull-right" >Bản đồ GIS</button>--}}
+            <a href="/admin/bandogis/gis2" class="btn btn-primary" >Bản đồ GIS</a>
         </div>
         @foreach($qldiemdichs as $qldiemdich)
             <tr>
@@ -25,10 +27,10 @@
                 <td>{{$qldiemdich->huyen_tp}}</td>
                 <td>{{$qldiemdich->tinh}}</td>
                 <td>{{$qldiemdich->updated_at}}</td>
-                <td>
-                    <a class="btn btn-primary btn-sm" href="/admin/quanlydiemdich/edit/{{$qldiemdich->id}}">
+                <td><a class="btn btn-primary btn-sm" href="/admin/quanlydiemdich/edit/{{$qldiemdich->id}}">
                         <i class="fas fa-edit"></i>
                     </a>
+
                     <a href="#" class="btn btn-danger btn-sm"
                        onclick="removeRowQLDiemDich({{$qldiemdich->id}}, '/admin/quanlydiemdich/destroy')">
                         <i class="fas fa-trash"></i>

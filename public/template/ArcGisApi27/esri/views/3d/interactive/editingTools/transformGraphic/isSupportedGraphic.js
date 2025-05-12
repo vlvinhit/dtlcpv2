@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../../core/has","../../../../../support/elevationInfoUtils","../isSupportedGraphicUtils"],function(d,g,e,b){d.isSupportedGraphic=function(a){if("graphics"!==a.layer?.type)return b.SupportedGraphicResult.GRAPHICS_LAYER_MISSING;if(null==a.geometry)return b.SupportedGraphicResult.GEOMETRY_MISSING;switch(a.geometry.type){case "point":break;case "polygon":case "polyline":case "multipoint":case "extent":case "mesh":return b.SupportedGraphicResult.SUPPORTED;default:return b.SupportedGraphicResult.GEOMETRY_TYPE_UNSUPPORTED}const c=
+null!=a.symbol&&"point-3d"===a.symbol.type&&a.symbol.symbolLayers;return c&&0<c.length&&c.some(f=>"object"===f.type)?"on-the-ground"!==e.getGraphicEffectiveElevationMode(a)&&e.hasGraphicFeatureExpressionInfo(a)?b.SupportedGraphicResult.ELEVATION_MODE_UNSUPPORTED:b.SupportedGraphicResult.SUPPORTED:b.SupportedGraphicResult.SYMBOL_TYPE_UNSUPPORTED};Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

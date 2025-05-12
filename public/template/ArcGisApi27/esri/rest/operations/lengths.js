@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../core/jsonMap"],function(c,g){const h=new g.JSONMap({preserveShape:"preserve-shape"});c.lengthsToRESTParameters=function(b){const {polylines:k,lengthUnit:d,geodesic:e,calculationType:f}=b.toJSON(),a={};a.polylines=JSON.stringify(k);b=b.polylines[0].spatialReference;a.sr=b.wkid??JSON.stringify(b.toJSON());d&&(a.lengthUnit=d);e&&(a.geodesic=e);f&&(a.calculationType=h.toJSON(f));return a};Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

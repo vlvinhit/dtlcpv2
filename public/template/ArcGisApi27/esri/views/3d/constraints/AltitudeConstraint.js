@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/Accessor ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/subclass ../state/Constraints".split(" "),function(a,d,b,k,e,m,n,p,l,f){a.AltitudeConstraint=function(g){function h(){var c=g.apply(this,arguments)||this;c.min=f.earthAltitudeConstraint.min;c.max=f.earthAltitudeConstraint.max;
+return c}d._inherits(h,g);return d._createClass(h)}(k);b.__decorate([e.property({type:Number})],a.AltitudeConstraint.prototype,"min",void 0);b.__decorate([e.property({type:Number})],a.AltitudeConstraint.prototype,"max",void 0);a.AltitudeConstraint=b.__decorate([l.subclass("esri.views.3d.constraints.AltitudeConstraint")],a.AltitudeConstraint);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

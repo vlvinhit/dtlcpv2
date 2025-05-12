@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/screenUtils ../../../core/Logger ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/Error ../../../core/accessorSupport/decorators/subclass ../../../chunks/vec3f64 ../../interactive/SegmentLabels ../../interactive/support/viewUtils".split(" "),function(a,e,l,m,v,w,x,y,z,n,p,q,r){a.SegmentLabels3D=function(f){function c(){return f.apply(this,arguments)||this}
+e._inherits(c,f);var g=c.prototype;g.getCameraOrExtent=function({view:b}){return b.state.camera};g.toScreenPointArray=function({view:b,elevationInfo:t,editGeometryOperations:d},u,h=m.createScreenPointArray()){({spatialReference:d}=d.data.coordinateHelper);r.vectorToRender(u,d,t,b,k);b.state.camera.projectToScreen(k,h);return h};return e._createClass(c)}(q.SegmentLabels);a.SegmentLabels3D=l.__decorate([n.subclass("esri.views.3d.interactive.SegmentLabels3D")],a.SegmentLabels3D);const k=p.create();Object.defineProperty(a,
+Symbol.toStringTag,{value:"Module"})});

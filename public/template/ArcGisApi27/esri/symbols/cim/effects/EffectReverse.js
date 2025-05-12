@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers"],function(e,f){let k=function(){function b(){}b.local=function(){null===b.instance&&(b.instance=new b);return b.instance};b.prototype.execute=function(a,c,d,g,h){return new l(a,c,d)};return f._createClass(b)}();k.instance=null;let l=function(){function b(a,c,d){this._inputGeometries=a;this._reverse=void 0!==c.reverse?c.reverse:!0}b.prototype.next=function(){for(var a=this._inputGeometries.next();a;){if(!this._reverse)return a;if("esriGeometryPolyline"===
+a.geometryType){for(a=a.clone();a.nextPath();)for(let c=0;c<a.numPoints/2;c++){a.seekInPath(c);const d=a.x,g=a.y;a.seekInPath(a.numPoints-c-1);const h=a.x,m=a.y;a.x=d;a.y=g;a.seekInPath(c);a.x=h;a.y=m}a.reset();return a}a=this._inputGeometries.next()}return null};return f._createClass(b)}();e.EffectReverse=k;Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})});

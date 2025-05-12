@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Clonable ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(a,b,c,g,h,k,m,n,p,l){a.PieChartLegendOptions=function(d){function e(){var f=d.apply(this,arguments)||this;f.title=null;return f}b._inherits(e,d);return b._createClass(e)}(g.ClonableMixin(h.JSONSupport));
+c.__decorate([k.property({type:String,json:{write:!0}})],a.PieChartLegendOptions.prototype,"title",void 0);a.PieChartLegendOptions=c.__decorate([l.subclass("esri.renderers.support.PieChartLegendOptions")],a.PieChartLegendOptions);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

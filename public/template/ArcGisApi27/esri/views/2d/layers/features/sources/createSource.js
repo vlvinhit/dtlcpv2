@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../../layers/support/arcgisLayerUrl ./DrillDownFeatureSource ./PagedFeatureSource ./SnapshotFeatureSource ./StreamSource".split(" "),function(f,h,k,l,m,n){f.createSource=function(a,c,g,d,e,b){a:{switch(a.type){case "snapshot":a={type:"feature",origin:"snapshot",featureCount:a.featureCount??0,serviceInfo:a,onMessage:d,outSR:c,tileInfoView:g,canAcceptRequest:e,store:b};break a;case "stream":a={type:"stream",serviceInfo:a,onMessage:d,outSR:c,canAcceptRequest:e};break a;case "memory":case "on-demand":b=
+a.source;b=Array.isArray(b)?"local":"path"in b&&h.isHostedAgolService(b.path)?"hosted":"unknown";a={type:"feature",serviceInfo:a,onMessage:d,outSR:c,origin:b,tileInfoView:g,canAcceptRequest:e};break a}a=void 0}switch(a.type){case "feature":switch(a.origin){case "hosted":case "local":return new l.PagedFeatureSource(a);case "snapshot":return new m.SnapshotFeatureSource(a);default:case "unknown":return new k.DrillDownFeatureSource(a)}case "stream":return new n.StreamSource(a)}};Object.defineProperty(f,
+Symbol.toStringTag,{value:"Module"})});

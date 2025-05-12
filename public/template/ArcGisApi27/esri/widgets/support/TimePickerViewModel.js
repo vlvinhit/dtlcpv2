@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Logger ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/Error ../../core/accessorSupport/decorators/subclass ./DateTimeElementViewModel".split(" "),function(b,e,a,k,l,m,n,f,g){a=function(c){function d(h){return c.call(this,h)||this}b._inherits(d,c);return b._createClass(d)}(g);return a=e.__decorate([f.subclass("esri.widgets.support.TimePickerViewModel")],a)});

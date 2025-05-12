@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../geometry/support/aaBoundingRect ./BitmapTile ./brushes ./webgl/enums ./webgl/TileContainer".split(" "),function(h,b,m,n,p,k,e){e=function(l){function c(){return l.apply(this,arguments)||this}b._inherits(c,l);var f=c.prototype;f.createTile=function(a){const d=this._tileInfoView.getTileBounds(m.create(),a),g=this._tileInfoView.getTileResolution(a.level),[q,r]=this._tileInfoView.tileInfo.size;return new n.BitmapTile(a,g,d[0],d[3],q,r)};
+f.prepareRenderPasses=function(a){const d=a.registerRenderPass({name:"bitmap (tile)",brushes:[p.brushes.bitmap],target:()=>this.children.map(g=>g.bitmap),drawPhase:k.WGLDrawPhase.MAP});return[...b._get(b._getPrototypeOf(c.prototype),"prepareRenderPasses",this).call(this,a),d]};f.doRender=function(a){this.visible&&a.drawPhase===k.WGLDrawPhase.MAP&&b._get(b._getPrototypeOf(c.prototype),"doRender",this).call(this,a)};b._createClass(c,[{key:"requiresDedicatedFBO",get:function(){return this.children.some(a=>
+"additive"===a.bitmap.blendFunction)}}]);return c}(e);h.BitmapTileContainer=e;Object.defineProperty(h,Symbol.toStringTag,{value:"Module"})});

@@ -44,9 +44,81 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
+                            <a href="/admin/phieududoanbenh" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Phiếu dự đoán bệnh</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="/admin/quanlydiemdich/list" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Quản lý Điểm dịch</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlytaikhoan" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Tài khoản</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlyphanquyen" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Phân quyền</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlydonvi" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Đơn vị</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlyquymocscn" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý QM chăn nuôi</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlycosochannuoi" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Cơ sở chăn nuôi</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/yeutonguyco" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Yếu tố nguy cơ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlydanhgia" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Đánh giá</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlykhuyennghi" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Khuyến nghị</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlycanhbao" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Cảnh báo</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/nhomcauhoitraloi" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Nhóm câu hỏi - Câu trả lời</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlycauhoi" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý câu hỏi</p>
                             </a>
                         </li>
                     </ul>

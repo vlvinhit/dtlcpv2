@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../Ground ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ../../webdoc/support/opacityUtils".split(" "),function(f,g,l,c,m,n,q,r,p,h){var d;c=d=function(e){function b(){var a=e.apply(this,arguments)||this;a.opacity=null;return a}f._inherits(b,e);var k=b.prototype;k.clone=function(){return new d({opacity:this.opacity})};
+k.cloneAndApplyTo=function(a){if(null==this.opacity)return a;a=a?.clone()??new l;a.opacity=this.opacity;return a};b.fromGround=function(a){return new d({opacity:a.opacity})};return f._createClass(b)}(c.JSONSupport);g.__decorate([m.property({type:Number,json:{type:n.Integer,read:{reader:h.transparencyToOpacity,source:"transparency"},write:{writer:(e,b)=>{b.transparency=h.opacityToTransparency(e)},target:"transparency"}}})],c.prototype,"opacity",void 0);return c=d=g.__decorate([p.subclass("esri.webscene.support.SlideGround")],
+c)});

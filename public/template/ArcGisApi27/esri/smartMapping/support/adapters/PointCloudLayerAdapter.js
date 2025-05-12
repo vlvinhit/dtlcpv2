@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/Logger ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/Error ../../../core/accessorSupport/decorators/subclass ./SceneLayerAdapter".split(" "),function(e,g,c,l,m,n,p,h,k){c=function(f){function d(a){return f.call(this,a)||this}e._inherits(d,f);var b=d.prototype;b.getField=function(a){return this.layer.fieldsIndex.get(a??"")};b.getFieldUsageInfo=function(a){a=
+this.getField(a);if(!a)return null;a=this._hasCachedStatistics(a.name);return{supportsLabelingInfo:a,supportsPopupTemplate:a,supportsRenderer:a,supportsLayerQuery:!1,supportsStatistics:a}};b.getFieldDomain=function(){return null};b.load=function(a){a=this.layer.load(a).then(()=>{this.geometryType="point";this.objectIdField=null;this.hasQueryEngine=this.supportsSQLExpression=!1});this.addResolvingPromise(a);return Promise.resolve(this)};return e._createClass(d)}(k);return c=g.__decorate([h.subclass("esri.smartMapping.support.adapters.PointCloudLayerAdapter")],
+c)});

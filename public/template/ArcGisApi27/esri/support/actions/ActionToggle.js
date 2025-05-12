@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ./ActionBase".split(" "),function(f,c,g,b,m,n,k,l){var d;b=d=function(h){function e(a){a=h.call(this,a)||this;a.image=null;a.type="toggle";a.value=!1;return a}f._inherits(e,h);e.prototype.clone=function(){return new d({active:this.active,className:this.className,
+disabled:this.disabled,icon:this.icon,id:this.id,indicator:this.indicator,title:this.title,visible:this.visible,image:this.image,value:this.value})};return f._createClass(e)}(l);c.__decorate([g.property()],b.prototype,"image",void 0);c.__decorate([g.property()],b.prototype,"value",void 0);return b=d=c.__decorate([k.subclass("esri.support.Action.ActionToggle")],b)});

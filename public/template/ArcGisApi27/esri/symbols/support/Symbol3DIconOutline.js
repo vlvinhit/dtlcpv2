@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../Color ../../core/JSONSupport ../../core/screenUtils ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ./materialUtils".split(" "),function(b,f,c,l,m,n,g,q,r,t,p,h){var d;b.Symbol3DIconOutline=d=function(k){function e(a){a=k.call(this,a)||this;a.color=new l([0,0,0,1]);a.size=n.px2pt(1);return a}f._inherits(e,
+k);e.prototype.clone=function(){const a={color:null!=this.color?this.color.clone():null,size:this.size};return new d(a)};return f._createClass(e)}(m.JSONSupport);c.__decorate([g.property(h.colorAndTransparencyProperty)],b.Symbol3DIconOutline.prototype,"color",void 0);c.__decorate([g.property(h.screenSizeProperty)],b.Symbol3DIconOutline.prototype,"size",void 0);b.Symbol3DIconOutline=d=c.__decorate([p.subclass("esri.symbols.support.Symbol3DIconOutline")],b.Symbol3DIconOutline);Object.defineProperty(b,
+Symbol.toStringTag,{value:"Module"})});

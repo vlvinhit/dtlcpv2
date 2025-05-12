@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(c,d,e,h,l,m,n,k){c.CustomParametersMixin=a=>{a=function(b){function f(){var g=b.apply(this,arguments)||this;g.customParameters=null;return g}d._inherits(f,b);return d._createClass(f)}(a);e.__decorate([h.property({type:Object,json:{write:{overridePolicy(b){return{enabled:!!(b&&
+0<Object.keys(b).length)}}}}})],a.prototype,"customParameters",void 0);return a=e.__decorate([k.subclass("esri.layers.mixins.CustomParametersMixin")],a)};Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

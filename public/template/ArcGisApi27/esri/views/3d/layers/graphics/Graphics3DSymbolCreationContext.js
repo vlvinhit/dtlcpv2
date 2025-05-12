@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers"],function(b,a){let e=a._createClass(function(c,d){this.scheduler=c;this.schedule=d;this.featureExpressionInfoContext=this.localOriginFactory=this.graphicsCoreOwner=this.drapeSourceRenderer=this.layer=this.overlaySR=this.renderCoordsHelper=this.clippingExtent=this.stage=this.renderer=this.elevationProvider=this.streamDataRequester=this.sharedResources=null;this.screenSizePerspectiveEnabled=!0;this.isAsync=this.skipHighSymbolLods=this.physicalBasedRenderingEnabled=
+this.slicePlaneEnabled=!1});a=a._createClass(function(){this.renderPriority=0;this.renderPriorityStep=1;this.ignoreDrivers=!1});b.Graphics3DSymbolCreationContext=e;b.Graphics3DSymbolLayerCreationContext=a;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

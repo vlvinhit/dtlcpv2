@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers"],function(c,a){let b=a._createClass(function(){this.cornerTiles=[null,null,null,null];this.cornerTileSamplerVersions=[-1,-1,-1,-1]}),d=a._createClass(function(){this.cornerNeighborData=[new b,new b,new b,new b];this.edgeResolutions=[-1,-1,-1,-1];this.edgePeerNeighbors=[null,null,null,null];this.edgePeerNeighborSamplerVersions=[-1,-1,-1,-1];this.cornerPeerNeighbors=[null,null,null,null]});a=a._createClass(function(){this.numVerticesPerSide=
+0;this.clippingArea=this.samplerData=null;this.wireframe=!1;this.samplerDataVersion=0;this.neighborData=new d});c.CornerNeighborData=b;c.GeometryState=a;c.NeighborhoodData=d;Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

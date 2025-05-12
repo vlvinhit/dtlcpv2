@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../../../Color","../../../../core/analysisThemeUtils"],function(c,b,e,a){let f=b._createClass(function(){this.color=a.getAccentColor()}),g=b._createClass(function(){this.color=new e([0,0,0,.04]);this.gridColor=a.getAccentColor(.5);this.outlineColor=a.getAccentColor(.7)}),h=b._createClass(function(){this.color=a.getAccentColor()}),k=b._createClass(function(){this.color=a.getAccentColor(.5);this.contrastColor=a.getContrastColor()}),
+l=b._createClass(function(){this.color=a.getContrastColor();this.outlineColor=a.getAccentColor()}),d=b._createClass(function(){this.callouts=new f;this.plane=new g;this.resizeManipulators=new h;this.rotateManipulators=new k;this.shiftManipulator=new l});c.settings=new d;c.reloadSettings=function(){c.settings=new d};Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

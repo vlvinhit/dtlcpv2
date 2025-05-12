@@ -1,0 +1,5 @@
+/*
+All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+*/
+import{g as e}from"./centroid2.js";import{g as t}from"./unitUtils.js";import{s as n}from"./vec3.js";import{c as o}from"./vec3f64.js";function r(o,r,p){switch(o){case"point":case"multipoint":return"point";case"polyline":return(null!=r&&"polyline"===r.type&&r.paths.length?r.paths[0].length:0)<2?"polylineZeroVertices":"polylineOneVertex";case"polygon":{const e=null!=r&&"polygon"===r.type&&r.rings.length?r.rings[0].length:0;return e<3?"polylineZeroVertices":e<4?"polygonOneVertex":"polygonTwoVertices"}case"mesh":return function(o,r){if("mesh"!==o?.type||"3d"!==r?.type)return;const{renderCoordsHelper:p}=r,{camera:c}=r.state,{width:a,height:m,zmin:h,zmax:u,center:g,spatialReference:y}=o.extent,f=(u??0)-(h??0),d=t(y),x=e(y),V=t(p.spatialReference),j=Math.max(a*d,m*d,f*x)/V;n(l,g.x,g.y,g.z??0),p.toRenderCoords(l,y,l);const w=j/c.computeScreenPixelSizeAt(l);return w>c.width*i?"meshTooClose":w<s?"meshTooFar":"mesh"}(r,p);default:return}}const s=20,i=1,l=o();export{r as g};

@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ../../geometry/Extent".split(" "),function(e,b,a,d,l,m,n,h,k){a=function(f){function g(){var c=f.apply(this,arguments)||this;c.extent=null;c.height=null;c.href=null;c.opacity=1;c.rotation=0;c.scale=null;c.visible=!0;c.width=null;return c}e._inherits(g,
+f);return e._createClass(g)}(a.JSONSupport);b.__decorate([d.property({type:k})],a.prototype,"extent",void 0);b.__decorate([d.property()],a.prototype,"height",void 0);b.__decorate([d.property()],a.prototype,"href",void 0);b.__decorate([d.property()],a.prototype,"opacity",void 0);b.__decorate([d.property()],a.prototype,"rotation",void 0);b.__decorate([d.property()],a.prototype,"scale",void 0);b.__decorate([d.property()],a.prototype,"visible",void 0);b.__decorate([d.property()],a.prototype,"width",void 0);
+return a=b.__decorate([h.subclass("esri.layer.support.MapImage")],a)});

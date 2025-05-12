@@ -1,0 +1,5 @@
+/*
+All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+*/
+import{e as t}from"../../../chunks/ensureType.js";import{g as r}from"../../../chunks/metadata.js";import"../../../chunks/typedArrayUtil.js";import"../../../chunks/Logger.js";import"../../../config.js";import"../../../chunks/object.js";import"../../lang.js";import"../../../chunks/string.js";import"../../../chunks/utils.js";import"../../../chunks/maybe.js";const n=Object.prototype.toString;function s(r){const n="__accessorMetadata__"in r?t(r):r;return function(...t){if(t.push(n),"number"==typeof t[2])throw new Error("Using @cast has parameter decorator is not supported since 4.16");return o.apply(this,t)}}function o(t,n,s,o){r(t,n).cast=o}function e(...t){var o;if(3!==t.length||"string"!=typeof t[1])return 1===t.length&&"[object Function]"===n.call(t[0])?s(t[0]):1===t.length&&"string"==typeof t[0]?(o=t[0],(t,n)=>{r(t,o).cast=t[n]}):void 0}export{e as cast};

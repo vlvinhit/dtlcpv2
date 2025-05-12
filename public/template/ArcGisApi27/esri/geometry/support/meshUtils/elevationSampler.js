@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../core/workers/workers ../../../chunks/vec3f64 ../ray ../triangle ./ElevationSamplerWorker ../../../layers/support/ElevationSampler".split(" "),function(m,n,r,t,p,u,v,w){function x(){++k;f&&(clearTimeout(f),f=0);return h?h:h=r.open("ElevationSamplerWorker").catch(()=>null)}function y(b){--k;null!=b&&0===k&&(f=setTimeout(()=>{b.close();h=null;f=0},1E4))}let z=function(b){function g(a,d,e){var c=b.call(this)||this;c._rindex=d;c.demResolution=
+{min:0,max:0};c.spatialReference=a.spatialReference.clone();c.extent=a.extent.clone();c.noDataValue=null!=e&&e.noDataValue||0;return c}n._inherits(g,b);g.prototype.elevationAt=function(a,d){let e=Number.NEGATIVE_INFINITY;p.fromValues([a,d,0],[0,0,-1],q);this._rindex.search({minX:a,maxX:a,minY:d,maxY:d},c=>{u.intersectRay(c,q,l)&&l[2]>e&&(e=l[2])});return e===Number.NEGATIVE_INFINITY?this.noDataValue:e};return n._createClass(g)}(w.ElevationSamplerBase);const A=new v;let k=0,h=null,f=0;const q=p.fromValues([0,
+0,0],[0,0,-1]),l=t.create();m.create=async function(b,g){const a=await x(),d=await A.createIndex(b,a);y(a);return new z(b,d,g)};Object.defineProperty(m,Symbol.toStringTag,{value:"Module"})});

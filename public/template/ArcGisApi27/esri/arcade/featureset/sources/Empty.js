@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../../../chunks/_rollupPluginBabelHelpers","../support/errorsupport","../support/FeatureSet","../support/IdSet","../support/shared"],function(f,c,l,g,h){return function(k){function e(d){var b=k.call(this,d)||this;b.declaredClass="esri.layers.featureset.sources.Empty";b._maxProcessing=1E3;b._wset=new g([],[],!1,null);b._parent=d.parentfeatureset;b._databaseType=h.FeatureServiceDatabaseType.Standardised;return b}f._inherits(e,k);var a=e.prototype;a._getSet=async function(){return this._wset};
+a.optimisePagingFeatureQueries=function(){};a._isInFeatureSet=function(){return h.IdState.NotInFeatureSet};a._getFeature=async function(){throw new c.FeatureSetError(c.FeatureSetErrorCodes.NeverReach);};a.queryAttachments=async function(){return[]};a._getFeatures=async function(){return"success"};a._featureFromCache=function(){return null};a._fetchAndRefineFeatures=async function(){throw new c.FeatureSetError(c.FeatureSetErrorCodes.NeverReach);};a._getFilteredSet=async function(){return new g([],
+[],!1,null)};a._stat=function(d,b,p,q,r,m,n){return this._manualStat(d,b,m,n)};a._canDoAggregates=async function(){return!1};return f._createClass(e)}(l)});

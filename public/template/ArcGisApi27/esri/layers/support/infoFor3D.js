@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports"],function(c){function m(a,b){return[...e,...b].find(d=>f(d)===a)}function n(a,b){return[...e,...b].find(d=>g(d)===a)}function p(a,b){const d=a.toLowerCase();return[...e,...b].find(k=>h(k).some(l=>d.endsWith(l)))}function f(a){return a?.[0]}function g(a){return a?.[1]}function h(a){return a?.[2].split(",")??[]}const e=[["binary","application/octet-stream","bin",""]];c.getAssetMapTable=function(a){return a.tables?.find(b=>"assetMaps"===b.role)};c.getFilePickerAcceptTypes=function(a){const b=
+{};for(const d of[...e,...(a?.supportedFormats??[])]){a=g(d);const k=h(d).map(l=>`.${l}`);b[a]??(b[a]=[]);b[a].push(...k)}return[{description:"3D Models",accept:b}]};c.getFilenameFormatId=function(a,b){return f(p(a,b))};c.getFormatDescription=function(a){return a?.[3]};c.getFormatExtensions=h;c.getFormatId=f;c.getFormatIdMimeType=function(a,b){return g(m(a,b))};c.getFormatMimeType=g;c.getMimeTypeFormatId=function(a,b){return f(n(a,b))};c.getSupportedExtensions=function(a){return[...e,...(a?.supportedFormats??
+[])].flatMap(h).map(b=>`.${b}`)};Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

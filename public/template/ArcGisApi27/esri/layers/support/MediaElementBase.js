@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Identifiable ../../core/JSONSupport ../../core/Loadable ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/reader ../../core/accessorSupport/decorators/subclass ./ControlPointsGeoreference ./CornersGeoreference ./ExtentAndRotationGeoreference ./GeoreferenceBase".split(" "),function(e,c,a,l,m,f,g,u,v,n,p,h,q,r,
+t){g={key:"type",base:t,typeMap:{"control-points":h,corners:q,"extent-and-rotation":r}};a=function(k){function d(b){b=k.call(this,b)||this;b.georeference=null;b.opacity=1;return b}e._inherits(d,k);d.prototype.readGeoreference=function(b){return h.fromJSON(b)};return e._createClass(d)}(a.NumericIdentifiableMixin(l.JSONSupportMixin(m)));c.__decorate([f.property({types:g,json:{write:!0}})],a.prototype,"georeference",void 0);c.__decorate([n.reader("georeference")],a.prototype,"readGeoreference",null);
+c.__decorate([f.property()],a.prototype,"opacity",void 0);return a=c.__decorate([p.subclass("esri.layers.support.MediaElementBase")],a)});

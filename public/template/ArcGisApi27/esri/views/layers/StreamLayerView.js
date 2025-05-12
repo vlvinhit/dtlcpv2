@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ../../layers/support/FeatureFilter".split(" "),function(g,c,e,m,n,p,k,l){return a=>{a=function(h){function d(...b){b=h.call(this,...b)||this;b._isUserPaused=!1;b.filter=null;return b}g._inherits(d,h);var f=d.prototype;f.resume=function(){this._isUserPaused=!1;this.suspended||
+this._doResume()};f.pause=function(){this._isUserPaused=!0;this.suspended||this._doPause()};f._onSuspendedChange=function(b){b?this._doPause():this._isUserPaused||this._doResume()};g._createClass(d,[{key:"connectionStatus",get:function(){return this._isUserPaused?"paused":this._streamConnectionStatus}}]);return d}(a);c.__decorate([e.property()],a.prototype,"_isUserPaused",void 0);c.__decorate([e.property({readOnly:!0})],a.prototype,"connectionStatus",null);c.__decorate([e.property({type:l})],a.prototype,
+"filter",void 0);return a=c.__decorate([k.subclass("esri.layers.mixins.StreamLayerView")],a)}});

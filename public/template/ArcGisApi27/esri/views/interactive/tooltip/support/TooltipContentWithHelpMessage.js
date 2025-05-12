@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../css","../../../../widgets/support/widgetUtils","../../../../widgets/support/jsxFactory"],function(d,b,f,c){d.TooltipContentWithHelpMessage=function({className:g,helpMessage:e},...a){a=a.filter(h=>!!h);return c.tsx("div",{class:f.classes(g,b.CONTENT)},0<a.length?c.tsx("div",{class:b.TABLE},...a):null,e?c.tsx("div",{key:"help-message",class:b.HELP_MESSAGE},e):null)};Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

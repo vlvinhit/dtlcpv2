@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../geometry ../../core/Clonable ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ../../geometry/Point ../../geometry/Polygon ../../geometry/Polyline".split(" "),function(e,c,a,l,m,d,q,r,t,n,f,p,g){a=function(h){function k(b){b=h.call(this,b)||this;b.frameCenter=null;b.frameOutline=null;
+b.lineOfSight=null;b.sensorLocation=null;b.sensorTrail=null;return b}e._inherits(k,h);return e._createClass(k)}(l.ClonableMixin(m.JSONSupport));c.__decorate([d.property({type:f})],a.prototype,"frameCenter",void 0);c.__decorate([d.property({type:p})],a.prototype,"frameOutline",void 0);c.__decorate([d.property({type:g})],a.prototype,"lineOfSight",void 0);c.__decorate([d.property({type:f})],a.prototype,"sensorLocation",void 0);c.__decorate([d.property({type:g})],a.prototype,"sensorTrail",void 0);return a=
+c.__decorate([n.subclass("esri.layers.support.TelemetryData")],a)});

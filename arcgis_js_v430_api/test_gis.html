@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Intro to MapView - Create a 2D map</title>
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.28/"></script>
+    <script>
+        require(["esri/Map", "esri/views/MapView", "esri/widgets/Home","esri/widgets/Locate",
+            "esri/Graphic", "esri/widgets/Fullscreen", "esri/widgets/ScaleBar",
+                "esri/widgets/BasemapGallery", "esri/widgets/Expand", "esri/layers/GraphicsLayer"],
+            (Map, MapView, Home, Locate, Graphic, Fullscreen, ScaleBar, BasemapGallery, Expand,
+             GraphicsLayer) => {
+            const map = new Map({
+                basemap: "topo-vector"
+            });
+            const view = new MapView({
+                container: "viewDiv", // Reference to the view div created in step 5
+                map: map, // Reference to the map object created before the view
+                zoom: 15, // Sets zoom level based on level of detail (LOD)
+                center: [106.35483, 10.35908], // longitude, latitude
+            });
+            let homeWidget = new Home({
+                view: view
+            });
+            // adds the home widget to the top left corner of the MapView
+            view.ui.add(homeWidget, "top-left");
+
+            let locateWidget = new Locate({
+                view: view,   // Attaches the Locate button to the view
+                graphic: new Graphic({
+                    symbol: { type: "simple-marker" }  // overwrites the default symbol used for the
+                    // graphic placed at the location of the user when found
+                })
+            });
+            view.ui.add(locateWidget, "top-left");
+
+            fullscreen = new Fullscreen({
+                view: view
+            });
+            view.ui.add(fullscreen, "top-left");
+
+            let scaleBar = new ScaleBar({
+                view: view
+            });
+            // Add widget to the bottom left corner of the view
+            view.ui.add(scaleBar, {
+                position: "bottom-left"
+            });
+
+            let basemapGallery = new BasemapGallery({
+                view: view
+            });
+            const basemapGalleryExpand = new Expand({
+                expandIcon: "basemap",  // see https://developers.arcgis.com/calcite-design-system/icons/
+                // expandTooltip: "Expand LayerList", // optional, defaults to "Expand" for English locale
+                view: view,
+                content: basemapGallery
+            });
+            view.ui.add(basemapGalleryExpand, "top-left");
+            // them Quan dao====================================
+            let textSymbolHoangSa = {
+                type: "text",  // autocasts as new TextSymbol()
+                color: "white",
+                haloColor: "black",
+                haloSize: "1px",
+                text: "Quần đảo Hoàng sa\nViệt Nam",
+                xoffset: 3,
+                yoffset: 3,
+                font: {  // autocasts as new Font()
+                    size: 12,
+                    family: "Josefin Slab",
+                    weight: "bold"
+                }
+            };
+            let pointHoangSa = {
+                type : "point",
+                latitude: 16.5268231,
+                longitude: 112.2489431
+            };
+            let textSymbolTruongSa = {
+                type: "text",  // autocasts as new TextSymbol()
+                color: "white",
+                haloColor: "black",
+                haloSize: "1px",
+                text: "Quần đảo Trường sa\nViệt Nam",
+                xoffset: 3,
+                yoffset: 3,
+                font: {  // autocasts as new Font()
+                    size: 12,
+                    family: "Josefin Slab",
+                    weight: "bold"
+                }
+            };
+            let pointTruongSa = {
+                type : "point",
+                latitude: 10.2564273,
+                longitude: 115.2714411
+            };
+            let hoangSaGraphic = new Graphic({
+                geometry: pointHoangSa,
+                symbol: textSymbolHoangSa
+            });
+            let truongSaGraphic = new Graphic({
+                geometry: pointTruongSa,
+                symbol: textSymbolTruongSa
+            });
+            // Add graphic when GraphicsLayer is constructed
+            let HoangSaTruongSalayer = new GraphicsLayer({
+                id:"BienDao",
+                title:"Biển Đảo",
+                graphics: [hoangSaGraphic, truongSaGraphic]
+            });
+            map.add(HoangSaTruongSalayer);
+        });
+    </script>
+</head>
+<body>
+    <div id="viewDiv"></div>
+</body>
+</html>

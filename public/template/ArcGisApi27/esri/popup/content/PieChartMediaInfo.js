@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ./mixins/ChartMediaInfo ./support/chartMediaInfoUtils".split(" "),function(e,f,h,a,n,p,k,l,m){var c;a=c=function(g){function d(b){b=g.call(this,b)||this;b.type="pie-chart";return b}e._inherits(d,g);d.prototype.clone=function(){return new c({altText:this.altText,
+title:this.title,caption:this.caption,value:this.value?this.value.clone():null})};return e._createClass(d)}(l);f.__decorate([h.property({type:["pie-chart"],readOnly:!0,json:{type:["piechart"],read:!1,write:m.chartTypeKebabDict.write}})],a.prototype,"type",void 0);return a=c=f.__decorate([k.subclass("esri.popup.content.PieChartMediaInfo")],a)});

@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../../chunks/_rollupPluginBabelHelpers ../../../../chunks/TextureOnly.glsl ../core/shaderTechnique/ReloadableShaderModule ../core/shaderTechnique/ShaderTechnique ./DefaultVertexAttributeLocations ./Program ../../../webgl/enums ../../../webgl/renderState".split(" "),function(k,f,g,l,m,c,n,p,d,b){c=function(e){function a(){return e.apply(this,arguments)||this}g._inherits(a,e);var h=a.prototype;h.initializeProgram=function(q){return new p.Program(q.rctx,a.shader.get().build(),
+n.Default3D)};h.initializePipeline=function(){return this.configuration.hasAlpha?b.makePipelineState({blending:b.separateBlendingParams(d.BlendFactor.SRC_ALPHA,d.BlendFactor.ONE,d.BlendFactor.ONE_MINUS_SRC_ALPHA,d.BlendFactor.ONE_MINUS_SRC_ALPHA),colorWrite:b.defaultColorWriteParams}):b.makePipelineState({colorWrite:b.defaultColorWriteParams})};return g._createClass(a)}(c.ShaderTechnique);c.shader=new m.ReloadableShaderModule(l.TextureOnly,()=>new Promise((e,a)=>k(["../core/shaderLibrary/util/TextureOnly.glsl"],
+e,a)));f.TextureTechnique=c;Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

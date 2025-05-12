@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../chunks/_rollupPluginBabelHelpers ../../../../chunks/tslib.es6 ../core/shaderLibrary/ShaderOutput ../core/shaderTechnique/ShaderTechniqueConfiguration ../materials/DefaultTechniqueConfiguration".split(" "),function(e,f,b,g,c,a){a=function(h){function k(){var d=h.apply(this,arguments)||this;d.output=g.ShaderOutput.Color;d.hasSlicePlane=!1;d.drawScreenSize=!1;d.useFixedSizes=!1;d.hasOccludees=!1;d.clippingEnabled=!1;return d}f._inherits(k,h);return f._createClass(k)}(a.DefaultTechniqueConfiguration);
+b.__decorate([c.parameter({count:g.ShaderOutput.COUNT})],a.prototype,"output",void 0);b.__decorate([c.parameter()],a.prototype,"hasSlicePlane",void 0);b.__decorate([c.parameter()],a.prototype,"drawScreenSize",void 0);b.__decorate([c.parameter()],a.prototype,"useFixedSizes",void 0);b.__decorate([c.parameter()],a.prototype,"hasOccludees",void 0);b.__decorate([c.parameter()],a.prototype,"clippingEnabled",void 0);b.__decorate([c.parameter({constValue:!0})],a.prototype,"hasSliceInVertexProgram",void 0);
+e.PointRendererTechniqueConfiguration=a;Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})});

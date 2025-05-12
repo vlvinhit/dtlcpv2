@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers"],function(g,k){let l=function(){function h(a,b,c){this._scale=a;this._shift=b;this._levelShift=c}var e=h.prototype;e.getLevelRowColumn=function(a){const b=this.getLevelShift(a[0]),c=this._shift+b;return c?[a[0]-b,a[1]>>c,a[2]>>c]:a};e.getLevelShift=function(a){return Math.min(a,this._levelShift)};e.getOffset=function(a,b){let c=0;var d=0;const f=this._shift+this.getLevelShift(a[0]);f&&(d=(1<<f)-1,b/=this._scale*(1<<f-1),c=(a[2]&d)*b,
+d=(a[1]&d)*b);return[c,d]};e.getScale=function(a){return this._scale*(1<<this._shift+this.getLevelShift(a))};return k._createClass(h)}();g.SchemaHelper=l;Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

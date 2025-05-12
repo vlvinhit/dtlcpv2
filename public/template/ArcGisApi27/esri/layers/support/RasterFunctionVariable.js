@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(e,b,a,c,h,l,m,k){a=function(f){function g(){var d=f.apply(this,arguments)||this;d.isDataset=!1;d.isPublic=!1;d.type="RasterFunctionVariable";return d}e._inherits(g,f);return e._createClass(g)}(a.JSONSupport);b.__decorate([c.property({type:String,
+json:{write:!0}})],a.prototype,"name",void 0);b.__decorate([c.property({type:Number,json:{type:h.Integer,write:!0,name:"_object_id"}})],a.prototype,"id",void 0);b.__decorate([c.property({type:Boolean,json:{write:!0}})],a.prototype,"isDataset",void 0);b.__decorate([c.property({type:Boolean,json:{write:!0}})],a.prototype,"isPublic",void 0);b.__decorate([c.property({json:{write:!0}})],a.prototype,"value",void 0);b.__decorate([c.property({type:String,json:{write:!0}})],a.prototype,"type",void 0);return a=
+b.__decorate([k.subclass("esri.layers.support.RasterFunctionVariable")],a)});

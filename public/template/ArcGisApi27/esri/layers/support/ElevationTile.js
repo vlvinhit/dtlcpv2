@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers","./ElevationSamplerData"],function(n,r,t){let z=function(){function l(a,b=null){this.tile=a;null!=b&&null!=a&&(this._samplerData=new t.ElevationSamplerData(b,a.extent))}l.prototype.sample=function(a,b){if(null!=this._samplerData){var {safeWidth:f,data:u,dx:v,dy:w,y1:x,x0:y}=this._samplerData,{width:p,values:g,noDataValue:h}=u;b=w*(x-b);b=0>b?0:b>f?f:b;a=v*(a-y);var k=0>a?0:a>f?f:a;a=Math.floor(b);var q=Math.floor(k),c=a*p+q,d=c+p,e=g[c],m=
+g[d];c=g[c+1];d=g[d+1];if(e!==h&&m!==h&&c!==h&&d!==h)return k-=q,e+=(c-e)*k,e+(m+(d-m)*k-e)*(b-a)}};r._createClass(l,[{key:"zmin",get:function(){return null!=this._samplerData?this._samplerData.data.minValue:0}},{key:"zmax",get:function(){return null!=this._samplerData?this._samplerData.data.maxValue:0}}]);return l}();n.ElevationTile=z;Object.defineProperty(n,Symbol.toStringTag,{value:"Module"})});

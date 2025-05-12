@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../../../core/arrayUtils","../EditGeometry"],function(d,g,h,k){let l=function(){function e(a,b){this._editGeometry=a;this._component=b;this._createdEdge=null}var c=e.prototype;c.apply=function(){let a="redo";if(null==this._createdEdge){a="apply";const b=this._component.getFirstVertex(),f=this._component.getLastVertex();if(this._component.isClosed()||3>this._component.vertices.length||null==b||null==f)return;this._createdEdge=new k.Edge(this._component,
+f,b)}this._createdEdge.leftVertex.rightEdge=this._createdEdge;this._createdEdge.rightVertex.leftEdge=this._createdEdge;this._component.edges.push(this._createdEdge);this._editGeometry.notifyChanges({operation:a})};c.undo=function(){null!=this._createdEdge&&(h.remove(this._component.edges,this._createdEdge),this._createdEdge.leftVertex.rightEdge=null,this._createdEdge.rightVertex.leftEdge=null,this._editGeometry.notifyChanges({operation:"undo"}))};c.accumulate=function(){return!1};return g._createClass(e)}();
+d.CloseComponent=l;Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

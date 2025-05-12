@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/lang ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/accessorSupport/decorators/enumeration ../../core/accessorSupport/decorators/subclass ./BuildingFilterMode ../../symbols/edges/utils".split(" "),function(f,b,h,k,a,l,m,n,p){var c;a=c=function(g){function d(){var e=g.apply(this,arguments)||this;e.type="wire-frame";e.edges=null;return e}f._inherits(d,g);d.prototype.clone=
+function(){return new c({edges:h.clone(this.edges)})};return f._createClass(d)}(n);b.__decorate([l.enumeration({wireFrame:"wire-frame"})],a.prototype,"type",void 0);b.__decorate([k.property(p.symbol3dEdgesProperty)],a.prototype,"edges",void 0);return a=c=b.__decorate([m.subclass("esri.layers.support.BuildingFilterModeWireFrame")],a)});

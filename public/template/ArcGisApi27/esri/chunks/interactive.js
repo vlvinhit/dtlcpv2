@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports"],function(h){function k(){const {disabled:a}=this;a||HTMLElement.prototype.click.call(this)}function e(a){a.preventDefault()}function f(a){const {disabled:b}=a.target;b&&(a.stopImmediatePropagation(),a.preventDefault())}const g=["mousedown","mouseup","click"],c={capture:!0};h.updateHostInteraction=function(a,b=!1){a.disabled?(a.el.setAttribute("tabindex","-1"),a.el.setAttribute("aria-disabled","true"),a.el.contains(document.activeElement)&&document.activeElement.blur(),a.el.click=
+k,a.el.addEventListener("pointerdown",e,c),g.forEach(d=>a.el.addEventListener(d,f,c))):(a.el.click=HTMLElement.prototype.click,a.el.removeEventListener("pointerdown",e,c),g.forEach(d=>a.el.removeEventListener(d,f,c)),"function"===typeof b?a.el.setAttribute("tabindex",b.call(a)?"0":"-1"):!0===b?a.el.setAttribute("tabindex","0"):!1===b&&a.el.removeAttribute("tabindex"),a.el.removeAttribute("aria-disabled"))}});

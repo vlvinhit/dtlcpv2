@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../../chunks/_rollupPluginBabelHelpers ../core/shaderTechnique/ReloadableShaderModule ../core/shaderTechnique/ShaderTechnique ../lib/DefaultVertexAttributeLocations ../lib/Program ../lib/StencilUtils ../../../../chunks/PointRenderer.glsl ../../../webgl/enums ../../../webgl/renderState".split(" "),function(l,f,g,m,b,n,p,h,q,r,d){b=function(c){function a(e,t,u){return c.call(this,e,t,u)||this}g._inherits(a,c);var k=a.prototype;k.initializeProgram=function(e){return new p.Program(e.rctx,
+a.shader.get().build(this.configuration),n.Default3D)};k.initializePipeline=function(){return d.makePipelineState({depthTest:{func:r.CompareFunction.LESS},depthWrite:d.defaultDepthWriteParams,colorWrite:d.defaultColorWriteParams,stencilWrite:this.configuration.hasOccludees?h.stencilWriteMaskOn:null,stencilTest:this.configuration.hasOccludees?h.stencilBaseAllZerosParams:null})};return g._createClass(a)}(b.ShaderTechnique);b.shader=new m.ReloadableShaderModule(q.PointRendererShader,()=>new Promise((c,
+a)=>l(["./PointRenderer.glsl"],c,a)));f.PointRendererTechnique=b;Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

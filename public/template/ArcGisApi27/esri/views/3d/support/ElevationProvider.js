@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers","../../../layers/graphics/dehydratedFeatureUtils"],function(d,e,h){function g(b){return"array"in b}e=e._createClass(function(b,a=null,c=0){this.array=b;this.spatialReference=a;this.offset=c});d.SamplePosition=e;d.getElevationAtPoint=function(b,a,c="ground"){if(h.isDehydratedPoint(a))return b.getElevation(a.x,a.y,a.z||0,a.spatialReference,c);if(g(a)){let f=a.offset;return b.getElevation(a.array[f++],a.array[f++],a.array[f]||0,a.spatialReference??
+b.spatialReference,c)}return b.getElevation(a[0],a[1],a[2]||0,b.spatialReference,c)};d.isSamplePosition=g;Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

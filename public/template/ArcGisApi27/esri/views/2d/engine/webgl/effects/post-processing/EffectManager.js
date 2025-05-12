@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../../../chunks/_rollupPluginBabelHelpers ./Bloom ./Blur ./Colorize ./DropShadow ./Opacity".split(" "),function(c,h,k,l,m,n,p){const q={colorize:()=>new m.Colorize,blur:()=>new l.Blur,bloom:()=>new k.Bloom,opacity:()=>new p.Opacity,"drop-shadow":()=>new n.DropShadow};let r=function(){function d(){this._effectMap=new Map}var e=d.prototype;e.dispose=function(){this._effectMap.forEach(a=>a.dispose());this._effectMap.clear()};e.getPostProcessingEffects=function(a){if(!a||0===
+a.length)return[];const f=[];for(const g of a){a:switch(a=g.type,a){case "bloom":case "blur":case "opacity":case "drop-shadow":break a;default:a="colorize"}let b=this._effectMap.get(a);b||(b=q[a](),this._effectMap.set(a,b));f.push({postProcessingEffect:b,effect:g})}return f};return h._createClass(d)}();c.EffectManager=r;Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

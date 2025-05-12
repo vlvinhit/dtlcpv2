@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers"],function(f,h){let l=function(){function d(a){this._allocations=new Map;a?Error.stackTraceLimit=Infinity:(this.add=()=>{},this.remove=()=>{})}var g=d.prototype;g.add=function(a){this._allocations.set(a,Error().stack)};g.remove=function(a){this._allocations.delete(a)};h._createClass(d,[{key:"information",get:function(){let a="";if(0<this._allocations.size){a+=`${this._allocations.size} live object allocations:\n`;const e=new Map;this._allocations.forEach(c=>
+{e.set(c,(e.get(c)??0)+1)});e.forEach((c,b)=>{b=b.split("\n");b.shift();b.shift();a+=`${c}: ${b.shift()}\n`;b.forEach(k=>a+=`   ${k}\n`)})}return a}}]);return d}();f.AllocationTracer=l;Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

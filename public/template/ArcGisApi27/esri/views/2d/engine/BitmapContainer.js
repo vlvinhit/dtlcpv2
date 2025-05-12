@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers","./brushes","./webgl/enums","./webgl/WGLContainer"],function(g,b,k,l,d){d=function(h){function c(){var a=h.apply(this,arguments)||this;a._hasCrossfade=!1;return a}b._inherits(c,h);var e=c.prototype;e.beforeRender=function(a){b._get(b._getPrototypeOf(c.prototype),"beforeRender",this).call(this,a);this._manageFade()};e.prepareRenderPasses=function(a){const f=a.registerRenderPass({name:"bitmap",brushes:[k.brushes.bitmap],target:()=>this.children,
+drawPhase:l.WGLDrawPhase.MAP});return[...b._get(b._getPrototypeOf(c.prototype),"prepareRenderPasses",this).call(this,a),f]};e._manageFade=function(){2<=this.children.reduce((a,f)=>a+(f.inFadeTransition?1:0),0)?(this.children.forEach(a=>a.blendFunction="additive"),this._hasCrossfade=!0):(this.children.forEach(a=>a.blendFunction="standard"),this._hasCrossfade=!1)};b._createClass(c,[{key:"requiresDedicatedFBO",get:function(){return this._hasCrossfade}}]);return c}(d);g.BitmapContainer=d;Object.defineProperty(g,
+Symbol.toStringTag,{value:"Module"})});

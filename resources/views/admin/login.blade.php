@@ -6,12 +6,12 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="../../index2.html"><b>Admin</b>LTE</a>
+        <a href="../../index2.html"><b>Chi Cục</b><br><b>Chăn nuôi và thú y</b></a>
     </div>
     <!-- /.login-logo -->
     <div class="card">
         <div class="card-body login-card-body">
-            <p class="login-box-msg">Sign in to start your session</p>
+            <p class="login-box-msg">Đăng nhập</p>
             @include('admin.alert')
             <form action="/admin/users/login/store" method="post">
                 <div class="input-group mb-3">
@@ -31,17 +31,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-7">
                         <div class="icheck-primary">
                             <input type="checkbox" name="remember" id="remember">
                             <label for="remember">
-                                Remember Me
+                                Ghi nhớ
                             </label>
                         </div>
                     </div>
                     <!-- /.col -->
-                    <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    <div class="col-5">
+                        <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -51,10 +51,10 @@
             <!-- /.social-auth-links -->
 
             <p class="mb-1">
-                <a href="forgot-password.html">I forgot my password</a>
+                <a href="forgot-password.html">Quên mật khẩu</a>
             </p>
             <p class="mb-0">
-                <a href="register.html" class="text-center">Register a new membership</a>
+                <a href="register.html" class="text-center">Đăng ký mới</a>
             </p>
         </div>
         <!-- /.login-card-body -->

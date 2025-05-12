@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Accessor ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(a,g,b,k,d,m,n,p,l){var e;a.Symbol3DAnchorPosition3D=e=function(h){function f(){var c=h.apply(this,arguments)||this;c.x=0;c.y=0;c.z=0;return c}g._inherits(f,h);f.prototype.clone=function(){return new e({x:this.x,y:this.y,
+z:this.z})};return g._createClass(f)}(k);b.__decorate([d.property({type:Number})],a.Symbol3DAnchorPosition3D.prototype,"x",void 0);b.__decorate([d.property({type:Number})],a.Symbol3DAnchorPosition3D.prototype,"y",void 0);b.__decorate([d.property({type:Number})],a.Symbol3DAnchorPosition3D.prototype,"z",void 0);a.Symbol3DAnchorPosition3D=e=b.__decorate([l.subclass("esri.symbols.support.Symbol3DAnchorPosition3D")],a.Symbol3DAnchorPosition3D);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers","../../../core/workers/WorkerHandle"],function(b,c,a){a=function(d){function e(f){return d.call(this,"SceneLayerWorker","dracoDecompressPointCloudData",{dracoDecompressPointCloudData:g=>[g.geometryBuffer]},f,{hasInitialize:!0})||this}c._inherits(e,d);return c._createClass(e)}(a.WorkerHandle);b.I3SPointsWorkerHandle=a;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

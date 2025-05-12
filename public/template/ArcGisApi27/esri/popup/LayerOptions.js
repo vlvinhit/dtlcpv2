@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../chunks/_rollupPluginBabelHelpers ../chunks/tslib.es6 ../core/JSONSupport ../core/accessorSupport/decorators/property ../core/accessorSupport/ensureType ../core/arrayUtils ../core/has ../core/accessorSupport/decorators/subclass".split(" "),function(f,c,a,g,l,m,n,k){var d;a=d=function(h){function e(b){b=h.call(this,b)||this;b.returnTopmostRaster=null;b.showNoDataRecords=null;return b}f._inherits(e,h);e.prototype.clone=function(){return new d({showNoDataRecords:this.showNoDataRecords,returnTopmostRaster:this.returnTopmostRaster})};
+return f._createClass(e)}(a.JSONSupport);c.__decorate([g.property({type:Boolean,json:{write:!0}})],a.prototype,"returnTopmostRaster",void 0);c.__decorate([g.property({type:Boolean,json:{write:!0}})],a.prototype,"showNoDataRecords",void 0);return a=d=c.__decorate([k.subclass("esri.popup.LayerOptions")],a)});

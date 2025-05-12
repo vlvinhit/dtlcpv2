@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers","../../../geometry/support/boundsUtils"],function(g,h,p){let k=function(){function c(){}c.local=function(){null===c.instance&&(c.instance=new c);return c.instance};c.prototype.execute=function(e,a,b,d,f){return new q(e,a,b)};return h._createClass(c)}();k.instance=null;let q=function(){function c(a,b,d){this._inputGeometries=a;this._rotateAngle=void 0!==b.angle?b.angle*Math.PI/180:0}var e=c.prototype;e.next=function(){let a=this._inputGeometries.next();
+for(;a;){if(0===this._rotateAngle||"esriGeometryPoint"===a.geometryType)return a;if(0<a.numPaths){var b=p.getCursorBoundsXY(a);const d=(b[2]+b[0])/2;b=(b[3]+b[1])/2;a.reset();return this._rotate(a.clone(),d,b)}a=this._inputGeometries.next()}return null};e._rotate=function(a,b,d){const f=Math.cos(this._rotateAngle),l=Math.sin(this._rotateAngle);for(;a.nextPath();)for(;a.nextPoint();){const m=a.x-b,n=a.y-d;a.x=b+m*f-n*l;a.y=d+m*l+n*f}a.reset();return a};return h._createClass(c)}();g.EffectRotate=k;
+Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

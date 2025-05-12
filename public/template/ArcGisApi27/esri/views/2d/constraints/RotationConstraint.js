@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/Accessor ../../../core/Identifiable ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/subclass".split(" "),function(f,c,b,m,g,p,q,r,n){var d;b=d=function(h){function e(){var a=h.apply(this,arguments)||this;a.enabled=!0;a.rotationEnabled=!0;return a}f._inherits(e,h);var k=e.prototype;k.constrain=
+function(a,l){if(!this.enabled||!l)return a;this.rotationEnabled||(a.rotation=l.rotation);return a};k.clone=function(){return new d({enabled:this.enabled,rotationEnabled:this.rotationEnabled})};return f._createClass(e)}(m.NumericIdentifiableMixin(b));c.__decorate([g.property()],b.prototype,"enabled",void 0);c.__decorate([g.property()],b.prototype,"rotationEnabled",void 0);return b=d=c.__decorate([n.subclass("esri.views.2d.constraints.RotationConstraint")],b)});

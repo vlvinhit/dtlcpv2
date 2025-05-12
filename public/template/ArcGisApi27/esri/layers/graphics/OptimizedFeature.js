@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers"],function(c,d){let e=function(){function a(b=null,f={},g,h){this.geometry=b;this.attributes=f;this.centroid=g;this.objectId=h;this.geohashY=this.geohashX=this.displayId=0}a.prototype.weakClone=function(){const b=new a(this.geometry,this.attributes,this.centroid,this.objectId);b.displayId=this.displayId;b.geohashX=this.geohashX;b.geohashY=this.geohashY;return b};return d._createClass(a)}(),k=function(a){function b(){return a.apply(this,arguments)||
+this}d._inherits(b,a);return d._createClass(b)}(e);c.OptimizedFeature=e;c.OptimizedFeatureWithGeometry=k;c.hasGeometry=function(a){return!(null==a.geometry||!a.geometry.coords||!a.geometry.coords.length)};Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

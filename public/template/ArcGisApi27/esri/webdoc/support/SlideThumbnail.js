@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(a,d,e,k,l,n,p,q,m){var b;a.SlideThumbnail=b=function(f){function c(){var g=f.apply(this,arguments)||this;g.url="";return g}d._inherits(c,f);var h=c.prototype;h.destroy=function(){this.url=""};h.clone=function(){return new b({url:this.url})};
+return d._createClass(c)}(k.JSONSupport);e.__decorate([l.property({type:String,json:{write:{isRequired:!0}}})],a.SlideThumbnail.prototype,"url",void 0);a.SlideThumbnail=b=e.__decorate([m.subclass("esri.webdoc.support.SlideThumbnail")],a.SlideThumbnail);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

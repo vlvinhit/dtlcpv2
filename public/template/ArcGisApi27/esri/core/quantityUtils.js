@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","./unitUtils"],function(c,d){function e(a,b){return{type:d.unitType(b),value:a,unit:b}}function f(a,b){return{type:d.unitType(b),value:a,unit:b}}function g(a,b){return{type:d.unitType(b),value:a,unit:b}}function h(a,b,l="arithmetic"){return{type:d.unitType(b),value:a,unit:b,rotationType:l}}function k(a,b){return e(d.convertUnit(a.value,a.unit,b),b)}const m=f(0,"meters"),n=g(0,"square-meters"),p=h(0,"radians");c.createAngle=h;c.createArea=g;c.createLength=f;c.createQuantity=e;c.createVolume=
+function(a,b){return{type:d.unitType(b),value:a,unit:b}};c.isBaseUnit=function(a){return d.isBaseUnit(a.unit)};c.max=function(a,b){return null==a?b:null==b?a:a.value>d.convertUnit(b.value,b.unit,a.unit)?a:b};c.min=function(a,b){return null==a?b:null==b?a:a.value<d.convertUnit(b.value,b.unit,a.unit)?a:b};c.scale=function(a,b){return null==a?null:{...a,value:a.value*b}};c.toBaseUnit=function(a){return k(a,d.baseUnitForUnit(a.unit))};c.toUnit=k;c.zeroMeters=m;c.zeroRadians=p;c.zeroSquareMeters=n;Object.defineProperty(c,
+Symbol.toStringTag,{value:"Module"})});

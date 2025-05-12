@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers","../../../geometry/support/boundsUtils"],function(f,g,k){let h=function(){function c(){}c.local=function(){null===c.instance&&(c.instance=new c);return c.instance};c.prototype.execute=function(e,a,b,d,m){return new l(e,a,b)};return g._createClass(c)}();h.instance=null;let l=function(){function c(a,b,d){this._inputGeometries=a;this._xFactor=void 0!==b.XScaleFactor?b.XScaleFactor:1.15;this._yFactor=void 0!==b.YScaleFactor?b.YScaleFactor:
+1.15}var e=c.prototype;e.next=function(){const a=this._inputGeometries.next();if(a){if(1===this._xFactor&&1===this._yFactor||"esriGeometryPoint"===a.geometryType)return a;if(0<a.numPaths){var b=k.getCursorBoundsXY(a);const d=(b[2]+b[0])/2;b=(b[3]+b[1])/2;a.reset();return this._scaleCursor(a.clone(),d,b)}}return null};e._scaleCursor=function(a,b,d){for(;a.nextPath();)for(;a.nextPoint();)a.x=b+(a.x-b)*this._xFactor,a.y=d+(a.y-d)*this._yFactor;a.reset();return a};return g._createClass(c)}();f.EffectScale=
+h;Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Clonable ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/enumeration ../../core/accessorSupport/decorators/subclass ../../chunks/vec3f64 ../Point".split(" "),function(g,c,b,m,n,u,v,w,p,q,h,r){b=function(k){function d(a){a=k.call(this,a)||this;a.type="local";a.isRelative=!0;a.isGeoreferenced=
+!1;a.origin=h.create();return a}g._inherits(d,k);var l=d.prototype;l.getOriginPoint=function(a){const [e,f,t]=this.origin;return new r({x:e,y:f,z:t,spatialReference:a})};l.setOriginFormPoint=function({x:a,y:e,z:f}){this.origin=h.fromValues(a,e,f??0)};return g._createClass(d)}(b.ClonableMixin(m.JSONSupport));c.__decorate([p.enumeration({local:"local"},{readOnly:!0})],b.prototype,"type",void 0);c.__decorate([n.property({type:[Number],nonNullable:!0,json:{write:!0}})],b.prototype,"origin",void 0);return b=
+c.__decorate([q.subclass("esri.geometry.support.MeshLocalVertexSpace")],b)});

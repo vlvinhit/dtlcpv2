@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../chunks/_rollupPluginBabelHelpers ../../../webgl/enums ../../../webgl/FramebufferObject ../../../webgl/RenderbufferDescriptor ../../../webgl/TextureDescriptor".split(" "),function(d,f,g,h,k,l){let m=function(){function e(a){this._rctx=a;this._fbos=new Map}var c=e.prototype;c.get=function(a){return this._getPool(a)};c.dispose=function(){this._fbos.forEach(a=>a.dispose());this._fbos.clear()};c._getPool=function(a){var b=this._fbos.get(a);if(b)return b;b=new h.FramebufferObject(this._rctx,
+new l.TextureDescriptor(a),new k.RenderbufferDescriptor(g.RenderbufferFormat.DEPTH_COMPONENT16,a));this._fbos.set(a,b);return b};return f._createClass(e)}();d.MultiSizeFramebuffer=m;Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});
