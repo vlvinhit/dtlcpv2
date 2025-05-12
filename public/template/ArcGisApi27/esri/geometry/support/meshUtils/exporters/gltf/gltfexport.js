@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../../chunks/_rollupPluginBabelHelpers ../../../../../core/urlUtils ./index ./asset ./scene ./node".split(" "),function(e,h,k,f,l,m,n){let p=function(){function b(a,c){this._file={type:"model/gltf-binary",data:a};this.origin=c}var d=b.prototype;d.buffer=function(){return Promise.resolve(this._file)};d.download=function(a){k.downloadBlobAsFile(new Blob([this._file.data],{type:this._file.type}),a)};return h._createClass(b)}();e.toBinaryGLTF=function(b,d){const a=new l.Asset,
+c=new m.Scene;a.addScene(c);c.addNode(new n.Node(b));return f.exportGLB(a,d).then(g=>new p(g[f.MODEL_NAME_GLB],g.origin))};Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})});

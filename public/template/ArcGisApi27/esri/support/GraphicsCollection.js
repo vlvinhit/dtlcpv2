@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../chunks/_rollupPluginBabelHelpers ../chunks/tslib.es6 ../Graphic ../core/Logger ../core/accessorSupport/ensureType ../core/arrayUtils ../core/has ../core/Error ../core/accessorSupport/decorators/shared ../core/accessorSupport/decorators/subclass ../core/support/OwningCollection".split(" "),function(b,d,e,f,p,k,q,r,t,l,m,n){b.GraphicsCollection=function(g){function c(){return g.apply(this,arguments)||this}d._inherits(c,g);var h=c.prototype;h._own=function(a){a.layer&&"remove"in a.layer&&
+a.layer!==this.owner&&a.layer.remove(a);a.layer=this.owner};h._release=function(a){a.layer===this.owner&&(a.layer=null)};return d._createClass(c)}(n.OwningCollection);e.__decorate([l.shared({Type:f,ensureType:k.ensureType(f)})],b.GraphicsCollection.prototype,"itemType",void 0);b.GraphicsCollection=e.__decorate([m.subclass("esri.support.GraphicsCollection")],b.GraphicsCollection);Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

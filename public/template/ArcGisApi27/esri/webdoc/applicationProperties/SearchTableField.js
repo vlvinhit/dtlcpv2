@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/enumeration ../../core/accessorSupport/decorators/subclass ../../layers/support/fieldType".split(" "),function(f,c,a,g,n,p,q,k,l,m){var d;a=d=function(h){function e(b){b=h.call(this,b)||this;b.exactMatch=!1;b.name=null;b.type=null;return b}f._inherits(e,
+h);e.prototype.clone=function(){return new d({exactMatch:this.exactMatch,type:this.type,name:this.name})};return f._createClass(e)}(a.JSONSupport);c.__decorate([g.property({type:Boolean,json:{write:!0}})],a.prototype,"exactMatch",void 0);c.__decorate([g.property({type:String,json:{write:!0}})],a.prototype,"name",void 0);c.__decorate([k.enumeration(m.kebabDict)],a.prototype,"type",void 0);return a=d=c.__decorate([l.subclass("esri.webdoc.applicationProperties.SearchTableField")],a)});

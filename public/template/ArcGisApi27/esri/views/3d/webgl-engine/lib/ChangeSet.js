@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../../../core/PooledArray"],function(a,c,d){let h=function(){function e(){this.adds=new d;this.removes=new d;this.updates=new d({allocator:b=>b||new f,deallocator:b=>{b.renderGeometry=null;return b}})}var g=e.prototype;g.clear=function(){this.adds.clear();this.removes.clear();this.updates.clear()};g.prune=function(){this.adds.prune();this.removes.prune();this.updates.prune()};c._createClass(e,[{key:"empty",get:function(){return 0===
+this.adds.length&&0===this.removes.length&&0===this.updates.length}}]);return e}(),f=c._createClass(function(){}),k=c._createClass(function(){this.adds=[];this.removes=[];this.updates=[]});a.ChangeSet=h;a.MaterialChangeSet=k;a.RenderGeometryUpdate=f;Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

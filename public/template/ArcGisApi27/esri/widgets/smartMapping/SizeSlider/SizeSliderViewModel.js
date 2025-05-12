@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/subclass ../SmartMappingPrimaryHandleSliderViewModel".split(" "),function(m,n,r,f,z,A,t,u){f=function(p){function h(a){a=p.call(this,a)||this;a.persistSizeRangeEnabled=!1;return a}m._inherits(h,p);h.prototype.updateStops=function(a){const {primaryHandleEnabled:v,
+persistSizeRangeEnabled:w,stops:x}=this,k=this.getValuesFromStops();if(k?.length&&(a.sort((b,e)=>b.value>e.value?1:-1).forEach(b=>{k[b.index]=b.value}),x.forEach((b,e)=>b.value=k[e]),v&&w)){({stops:a}=this);var c=this.getValuesFromStops(),d=a.map(g=>g.size);const b=Math.max(...d),e=Math.min(...d);d=Math.max(...c);c=Math.min(...c);const l=a[5===a.length?2:1].value;d=Math.abs(d-l);c=Math.abs(c-l);const q=d>c?d:c,y=b-e;0!==q&&a.forEach(g=>{g.size=Math.abs(g.value-l)/q*y+e})}};return m._createClass(h)}(u);
+n.__decorate([r.property()],f.prototype,"persistSizeRangeEnabled",void 0);return f=n.__decorate([t.subclass("esri.widgets.smartMapping.SizeSlider.SizeSliderViewModel")],f)});

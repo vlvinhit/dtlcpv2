@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../chunks/_rollupPluginBabelHelpers","./lang","./Logger","./Message"],function(e,h,k,d){d=function(f){function c(a,b,g){return f.call(this,a,b,g)||this}e._inherits(c,f);c.prototype.toJSON=function(){if(null!=this.details)try{return{name:this.name,message:this.message,details:JSON.parse(JSON.stringify(this.details,(a,b)=>{if(b&&"object"===typeof b&&"function"===typeof b.toJSON)return b;try{return h.clone(b)}catch(g){return"[object]"}}))}}catch(a){throw k.getLogger("esri.core.Error").error(a),
+a;}return{name:this.name,message:this.message,details:this.details}};c.fromJSON=function(a){return new c(a.name,a.message,a.details)};return e._createClass(c)}(d);d.prototype.type="error";return d});

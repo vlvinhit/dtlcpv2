@@ -1,0 +1,5 @@
+/*
+All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+*/
+function n(n){return["u8","s8"].includes(n.pixelType)&&null!=n.statistics?.[0]?.min&&null!=n.statistics[0]?.max&&1===n.bandCount}function t(t,e){const{attributeTable:a,bandCount:u}=t;return!((null!=a||!n(t))&&(null==a||u>1||e&&null==a.fields.find((n=>n.name.toLowerCase()===e.toLowerCase()))))}function e(n){const{bandCount:t,dataType:e,pixelType:a}=n;return"elevation"===e||"generic"===e&&1===t&&("s16"===a||"s32"===a||"f32"===a||"f64"===a)}function a(n,t=!1){const{bandCount:e,colormap:a,pixelType:u}=n;return 1===e&&(!!a?.length||!t&&"u8"===u)}function u(n,t=!1){const{attributeTable:e,bandCount:a}=n;return 1===a&&(!t||null!=e||null!=n.histograms)}function o(n){const{dataType:t}=n;return"vector-uv"===t||"vector-magdir"===t}function r(n){const{dataType:t}=n;return"vector-uv"===t||"vector-magdir"===t}export{a,e as b,o as c,u as d,r as e,n as f,t as i};

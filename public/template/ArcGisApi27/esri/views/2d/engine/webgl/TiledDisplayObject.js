@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../../../chunks/mat3","../DisplayObject","../../tiling/TileKey"],function(k,l,m,f,r){f=function(n){function g(b,c,d,h,e,p,t=e,u=p){var a=n.call(this)||this;a.triangleCountReportedInDebug=0;a.triangleCount=0;a.texture=null;a.key=new r(b);a.resolution=c;a.x=d;a.y=h;a.width=e;a.height=p;a.rangeX=t;a.rangeY=u;return a}l._inherits(g,n);var q=g.prototype;q.destroy=function(){this.texture&&(this.texture.dispose(),this.texture=null)};q.setTransform=
+function(b){const c=this.resolution/(b.resolution*b.pixelRatio),d=this.transforms.tileMat3,[h,e]=b.toScreenNoRotation([0,0],[this.x,this.y]);m.set(d,this.width/this.rangeX*c,0,0,0,this.height/this.rangeY*c,0,h,e,1);m.multiply(this.transforms.dvs,b.displayViewMat3,d)};return l._createClass(g)}(f.DisplayObject);k.TiledDisplayObject=f;Object.defineProperty(k,Symbol.toStringTag,{value:"Module"})});

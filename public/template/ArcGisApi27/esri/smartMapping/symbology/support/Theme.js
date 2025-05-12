@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../../../chunks/_rollupPluginBabelHelpers","../../../core/lang","../../support/utils"],function(m,n,h){return function(){function k(a){const {name:e,label:c,description:b,schemes:f}=a;this.name=e;this.label=c;this.description=b;this.schemes=f;const d=a.basemapGroups||h.defaultBasemapGroups;let g=[];d&&Object.keys(d).forEach(p=>{g=g.concat(d[p])});this.supportedBasemaps=g;this.basemapGroups=d}var l=k.prototype;l.isBasemapSupported=function(a){return(a=h.getBasemapId(a,this.supportedBasemaps))&&
+this.supportedBasemaps.includes(a)?!0:!1};l.getRawSchemes=function(a){var e=a.basemap,c=a.basemapTheme,b=null;let f=null;e&&(b=h.getBasemapId(e,this.supportedBasemaps,!1))&&(e=h.getBasemapGroup(b),null!=e&&(f=e));!b&&c&&(b="dark"===c?"dark-gray":"gray",f=c);b||f||(b="gray",f="light");const {basemapId:d,basemapTheme:g}={basemapId:b,basemapTheme:f};c=g;d&&(b=h.getBasemapGroup(d,this.basemapGroups),null!=b&&(c=b));a=a.geometryType;"multipoint"===a?a="point":"mesh"===a&&(a="polygon");return{schemesInfo:n.clone((this.schemes[a]||
+this.schemes["default"])[c]),basemapId:d,basemapTheme:g}};return m._createClass(k)}()});

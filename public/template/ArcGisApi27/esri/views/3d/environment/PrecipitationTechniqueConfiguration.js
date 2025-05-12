@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers","../../../chunks/tslib.es6","../webgl-engine/core/shaderTechnique/ShaderTechniqueConfiguration"],function(b,c,h,d){b.PrecipitationType=void 0;(function(a){a[a.Rain=0]="Rain";a[a.Snow=1]="Snow";a[a.COUNT=2]="COUNT"})(b.PrecipitationType||(b.PrecipitationType={}));let g=function(a){function e(){var f=a.apply(this,arguments)||this;f.type=b.PrecipitationType.Rain;return f}c._inherits(e,a);return c._createClass(e)}(d.ShaderTechniqueConfiguration);
+h.__decorate([d.parameter({count:b.PrecipitationType.COUNT})],g.prototype,"type",void 0);b.PrecipitationTechniqueConfiguration=g;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

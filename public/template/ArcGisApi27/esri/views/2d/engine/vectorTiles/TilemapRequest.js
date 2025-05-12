@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../../../../chunks/_rollupPluginBabelHelpers","../../../../request","../../../../core/maybe","../../../../core/promiseUtils","../../tiling/TileKey"],function(g,h,k,l,m){return function(){function e(a,b){this._tilemap=a;this._tileIndexUrl=b}var c=e.prototype;c.destroy=function(){this._tilemap=k.destroyMaybe(this._tilemap);this._tileIndexPromise=null};c.fetchTileIndex=async function(a){this._tileIndexPromise||(this._tileIndexPromise=h(this._tileIndexUrl,{query:{...a?.query}}).then(b=>b.data.index));
+return this._tileIndexPromise};c.dataKey=function(a,b){const {level:n,row:p,col:q}=a,d=new m(a);return this._tilemap.fetchAvailabilityUpsample(n,p,q,d,b).then(()=>{d.world=a.world;return d}).catch(f=>{if(l.isAbortError(f))throw f;return null})};return g._createClass(e)}()});

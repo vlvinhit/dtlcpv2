@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../Color ../../core/Accessor ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ./DurationMode".split(" "),function(d,b,e,a,f,m,n,p,k,l){a=function(g){function h(){var c=g.apply(this,arguments)||this;c.color=new e([0,0,255,.7]);c.mode=l.DurationMode.Continuous;return c}d._inherits(h,g);return d._createClass(h)}(a);
+b.__decorate([f.property({type:e})],a.prototype,"color",void 0);b.__decorate([f.property()],a.prototype,"mode",void 0);return a=b.__decorate([k.subclass("esri.widgets.ShadowCast.DurationOptions")],a)});

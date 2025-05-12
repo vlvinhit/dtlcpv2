@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    container_name: laravel_web
+    ports:
+      - "80:80"
+    networks:
+      - appnet
+    environment:
+      APP_URL: http://35.192.51.13
+      DB_CONNECTION: sqlsrv
+      DB_HOST: 34.30.185.185
+      DB_PORT: 1433
+      DB_DATABASE: dtlcp
+      DB_USERNAME: sqlserver
+      DB_PASSWORD: P@ssw0rd.2025#
+networks:
+  appnet:
+

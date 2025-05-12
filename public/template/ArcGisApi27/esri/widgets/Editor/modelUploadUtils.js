@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/handleUtils ../../core/maybe ../../core/promiseUtils ../../core/reactiveUtils ./workflowUtils".split(" "),function(n,e,h,p,q,r,t){function k(b){return"scene"===b?.layer?.type}e.isModelUpload=k;e.waitForModelUpload=async function({view:b,data:c,signal:u,next:v,cancel:l}){const {creationInfo:a}=c;if(a&&k(a)){var {layer:w}=a,f=null!=a.geometryToPlace;a.geometryToPlace=null;if(f)l();else{f=(await new Promise((g,x)=>n(["./Upload"],g,x))).Upload;q.throwIfAborted(u);var d=
+new f;c.upload=d;var m=t.showProgressCursor(b);b=h.handlesGroup([m,r.watch(()=>d.state,g=>{switch(g){case "success":a.maxFeatures=1;a.geometryToPlace=d.result;v();break;case "error":m.remove();break;case "canceled":l()}}),h.makeHandle(()=>{c.upload=p.destroyMaybe(c.upload)})]);d.uploadTo(w);return b}}};Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})});

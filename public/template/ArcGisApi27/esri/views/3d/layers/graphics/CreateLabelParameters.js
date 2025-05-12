@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers"],function(b,a){a=a._createClass(function(c=null,d="center",e="center",f=null,g=[0,0,0],h=0,k=[0,0,0,1],l=[0,0],m="world",n=0,p=0){this.verticalOffset=c;this.horizontalPlacement=d;this.verticalPlacement=e;this.text=f;this.translation=g;this.elevationOffset=h;this.centerOffset=k;this.screenOffset=l;this.centerOffsetUnits=m;this.displayWidth=n;this.displayHeight=p});b.CreateLabelParameters=a;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

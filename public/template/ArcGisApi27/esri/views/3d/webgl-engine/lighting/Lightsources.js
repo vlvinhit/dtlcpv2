@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../../../chunks/vec3f64"],function(b,a,c){let f=a._createClass(function(d=c.create()){this.intensity=d}),g=a._createClass(function(d=c.create(),e=c.fromValues(.57735,.57735,.57735)){this.intensity=d;this.direction=e}),m=a._createClass(function(d=c.create(),e=c.fromValues(.57735,.57735,.57735),h=!0,k=1,l=1){this.intensity=d;this.direction=e;this.castShadows=h;this.specularStrength=k;this.environmentStrength=l});a=a._createClass(function(){this.r=
+[0];this.g=[0];this.b=[0]});b.AmbientLight=f;b.FillLight=g;b.MainLight=m;b.SphericalHarmonicsAmbientLight=a;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

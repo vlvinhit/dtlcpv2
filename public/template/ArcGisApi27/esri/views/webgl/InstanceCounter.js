@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers","../support/AllocationTracer","./enums"],function(d,k,l,e){const h={RECORD_ALLOCATIONS:!1};let m=function(){function f(){this._current=[];this._max=[];for(this._allocations=new l.AllocationTracer(h.RECORD_ALLOCATIONS);this._current.length<e.ResourceType.COUNT;)this._current.push(0),this._max.push(0)}var g=f.prototype;g.resetMax=function(){for(this._max.length=0;this._max.length<this._current.length;)this._max.push(0)};g.increment=function(a,
+b){const c=++this._current[a];this._max[a]=Math.max(c,this._max[a]);this._allocations.add(b)};g.decrement=function(a,b){--this._current[a];this._allocations.remove(b)};k._createClass(f,[{key:"max",get:function(){return this._max}},{key:"current",get:function(){return this._current}},{key:"total",get:function(){return this.current.reduce((a,b)=>a+b,0)}},{key:"resourceInformation",get:function(){let a="";if(0<this.total){a+="Live objects:\n";for(let b=0;b<e.ResourceType.COUNT;++b){const c=this._current[b];
+0<c&&(a+=`${e.ResourceType[b]}: ${c}\n`)}}return a+=this._allocations.information}}]);return f}();d.InstanceCounter=m;d.test=h;Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

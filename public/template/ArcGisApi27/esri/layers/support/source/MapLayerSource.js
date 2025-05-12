@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/JSONSupport ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/enumeration ../../../core/accessorSupport/decorators/subclass".split(" "),function(a,f,c,k,g,l,q,r,m,n){var d;a.MapLayerSource=d=function(h){function e(b){b=h.call(this,b)||this;b.type="map-layer";return b}f._inherits(e,
+h);e.prototype.clone=function(){const {mapLayerId:b,gdbVersion:p}=this;return new d({mapLayerId:b,gdbVersion:p})};return f._createClass(e)}(k.JSONSupport);c.__decorate([m.enumeration({mapLayer:"map-layer"})],a.MapLayerSource.prototype,"type",void 0);c.__decorate([g.property({type:l.Integer,json:{write:!0}})],a.MapLayerSource.prototype,"mapLayerId",void 0);c.__decorate([g.property({type:String,json:{write:!0}})],a.MapLayerSource.prototype,"gdbVersion",void 0);a.MapLayerSource=d=c.__decorate([n.subclass("esri.layers.support.source.MapLayerSource")],
+a.MapLayerSource);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

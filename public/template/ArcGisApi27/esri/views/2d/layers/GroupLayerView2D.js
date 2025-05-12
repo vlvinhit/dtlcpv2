@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/Logger ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/Error ../../../core/accessorSupport/decorators/subclass ../engine/webgl/GroupContainer ./LayerView2D ../../layers/GroupLayerView".split(" "),function(e,g,c,p,q,r,t,h,k,l,m){c=function(f){function d(){var b=f.apply(this,arguments)||this;b.container=new k.GroupContainer;return b}e._inherits(d,f);var a=d.prototype;
+a.attach=function(){this._updateStageChildren();this.addAttachHandles(this.layerViews.on("after-changes",()=>this._updateStageChildren()))};a.detach=function(){this.container.removeAllChildren()};a.update=function(b){};a.moveStart=function(){};a.viewChange=function(){};a.moveEnd=function(){};a._updateStageChildren=function(){this.container.removeAllChildren();this.layerViews.forEach((b,n)=>this.container.addChildAt(b.container,n))};return e._createClass(d)}(l.LayerView2DMixin(m));return c=g.__decorate([h.subclass("esri.views.2d.layers.GroupLayerView2D")],
+c)});

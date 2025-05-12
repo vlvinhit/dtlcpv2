@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../support/requestPresets"],function(d,e){function f(a){return!a.type||"Feature Layer"===a.type}d.fetchFeatureService=async function(a,g){const b=await e.fetchArcGISServiceJSON(a,g);b.layers=b.layers.filter(f);const c={serviceJSON:b};if(10.5>(b.currentVersion??0))return c;a=await e.fetchArcGISServiceJSON(a+"/layers",g);c.layersJSON={layers:a.layers.filter(f),tables:a.tables};return c};Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

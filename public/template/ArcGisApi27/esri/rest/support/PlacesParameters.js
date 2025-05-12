@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Accessor ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(d,c,a,e,k,l,m,h){a=function(f){function g(b){b=f.call(this,b)||this;b.apiKey=null;b.url="https://places-api.arcgis.com/arcgis/rest/services/places-service/v1";return b}d._inherits(g,f);return d._createClass(g)}(a);c.__decorate([e.property()],
+a.prototype,"apiKey",void 0);c.__decorate([e.property()],a.prototype,"url",void 0);return a=c.__decorate([h.subclass("esri.rest.support.PlacesParameters")],a)});

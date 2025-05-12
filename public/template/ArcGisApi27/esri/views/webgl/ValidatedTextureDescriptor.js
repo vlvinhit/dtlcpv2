@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers","./enums","./TextureDescriptor"],function(h,d,a,e){e=function(k){function c(f,g){var b=k.call(this)||this;b.context=f;Object.assign(d._assertThisInitialized(b),g);switch(b.internalFormat){case a.SizedPixelFormat.R16F:case a.SizedPixelFormat.R16I:case a.SizedPixelFormat.R16UI:case a.SizedPixelFormat.R32F:case a.SizedPixelFormat.R32I:case a.SizedPixelFormat.R32UI:case a.SizedPixelFormat.R8_SNORM:case a.SizedPixelFormat.R8:case a.SizedPixelFormat.R8I:case a.SizedPixelFormat.R8UI:b.pixelFormat=
+a.PixelFormat.RED}return b}d._inherits(c,k);c.validate=function(f,g){return new c(f,g)};return d._createClass(c)}(e.TextureDescriptor);h.ValidatedTextureDescriptor=e;Object.defineProperty(h,Symbol.toStringTag,{value:"Module"})});

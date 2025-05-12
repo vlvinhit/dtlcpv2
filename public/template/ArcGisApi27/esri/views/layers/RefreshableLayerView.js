@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Logger ../../core/promiseUtils ../../core/reactiveUtils ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(c,d,g,h,k,l,p,q,r,m){return a=>{a=function(e){function b(){return e.apply(this,arguments)||this}c._inherits(b,e);b.prototype.initialize=function(){this.handles.add(k.on(()=>this.layer,
+"refresh",n=>{this.doRefresh(n.dataChanged).catch(f=>{h.isAbortError(f)||g.getLogger(this).error(f)})}),"RefreshableLayerView")};return c._createClass(b)}(a);d.__decorate([l.property()],a.prototype,"layer",void 0);return a=d.__decorate([m.subclass("esri.layers.mixins.RefreshableLayerView")],a)}});

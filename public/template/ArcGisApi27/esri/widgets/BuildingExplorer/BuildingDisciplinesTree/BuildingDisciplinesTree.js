@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/subclass ../../Widget ./BuildingDisciplinesNode ../../support/widgetUtils ../../support/jsxFactory".split(" "),function(f,c,d,a,t,u,k,l,m,v,g){const n={expand:"expand",collapse:"collapse",hideSublayer:"hideSublayer",showSublayer:"showSublayer"};a=function(h){function e(b){b=
+h.call(this,b)||this;b.toggleSiblingsVisibility=!1;return b}f._inherits(e,h);e.prototype.render=function(){const {vm:b}=this,p=this.toggleSiblingsVisibility,q=this.messages??n;return g.tsx("div",{role:"tree",class:"esri-building-disciplines-tree"},b.root.children.toArray().reverse().map(r=>g.tsx(m,{node:r,messages:q,toggleSiblingsVisibility:p})))};return f._createClass(e)}(l);c.__decorate([d.property()],a.prototype,"vm",void 0);c.__decorate([d.property()],a.prototype,"messages",void 0);c.__decorate([d.property()],
+a.prototype,"toggleSiblingsVisibility",void 0);return a=c.__decorate([k.subclass("esri.widgets.BuildingExplorer.BuildingDisciplinesTree.BuildingDisciplinesTree")],a)});

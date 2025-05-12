@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("require exports ../Viewpoint ../geometry/support/webMercatorUtils ../rest/geometryService/project ../rest/support/ProjectParameters".split(" "),function(h,g,k,l,m,n){async function p(a,d,f){a=a?.spatialReference;const e=d?.extent;if(!a||!e)return null;if(a.isWGS84)return e.clone();if(a.isWebMercator)return l.geographicToWebMercator(e);const {getGeometryServiceURL:q}=await new Promise((b,c)=>h(["../portal/support/geometryServiceUtils"],b,c));try{const b=await q(d),c=new n;c.geometries=[e];
+c.outSpatialReference=a;return(await m.project(b,c))[0]}catch(b){f.error("Error projecting item's extent:",b)}return null}g.computeInitialViewpoint=async function(a,d,f){return a?.viewpoint?.targetGeometry?null:(a=await p(a,d,f))?new k({targetGeometry:a}):null};Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

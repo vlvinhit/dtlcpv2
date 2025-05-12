@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../../../../chunks/_rollupPluginBabelHelpers","./BrushFlow","../webgl/enums","../webgl/WGLContainer"],function(b,f,g,h){return function(d){function c(){var a=d.apply(this,arguments)||this;a.flowStyle=null;return a}b._inherits(c,d);var e=c.prototype;e.doRender=function(a){b._get(b._getPrototypeOf(c.prototype),"doRender",this).call(this,a)};e.prepareRenderPasses=function(a){const k=a.registerRenderPass({name:"flow",brushes:[f],target:()=>this.children,drawPhase:g.WGLDrawPhase.MAP});return[...b._get(b._getPrototypeOf(c.prototype),
+"prepareRenderPasses",this).call(this,a),k]};b._createClass(c,[{key:"requiresDedicatedFBO",get:function(){return!1}}]);return c}(h)});

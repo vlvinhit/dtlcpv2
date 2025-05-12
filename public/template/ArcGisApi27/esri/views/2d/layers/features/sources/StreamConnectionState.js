@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../../chunks/_rollupPluginBabelHelpers ../../../../../chunks/tslib.es6 ../../../../../core/Accessor ../../../../../core/accessorSupport/decorators/property ../../../../../core/accessorSupport/decorators/subclass".split(" "),function(a,e,b,g,c,h){a.StreamConnectionState=function(f){function d(k){return f.call(this,k)||this}e._inherits(d,f);e._createClass(d,[{key:"connectionStatus",get:function(){return this.connection?.connectionStatus}},{key:"errorString",get:function(){return this.connection?.errorString}}]);
+return d}(g);b.__decorate([c.property()],a.StreamConnectionState.prototype,"connection",void 0);b.__decorate([c.property()],a.StreamConnectionState.prototype,"connectionStatus",null);b.__decorate([c.property()],a.StreamConnectionState.prototype,"errorString",null);a.StreamConnectionState=b.__decorate([h.subclass("esri.views.2d.layers.features.sources.StreamConnectionState")],a.StreamConnectionState);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

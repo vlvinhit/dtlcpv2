@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../../chunks/_rollupPluginBabelHelpers","../../../../../core/maybe","../../../../../core/promiseUtils"],function(c,f,d,g){let k=function(){function b(a,h){this._textureRep=a;this.loadPromise=null;this._disposed=!1;a=this._textureRep.acquire(h);g.isPromiseLike(a)?(a.then(e=>{this._disposed?d.releaseMaybe(e):this._textureRef=e}),this.loadPromise=a):this._textureRef=a}b.prototype.dispose=function(){this._textureRef=d.releaseMaybe(this._textureRef);this._disposed=!0};f._createClass(b,
+[{key:"glTexture",get:function(){return null!=this._textureRef?this._textureRef.glTexture:null}}]);return b}();c.RenderTexture=k;Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

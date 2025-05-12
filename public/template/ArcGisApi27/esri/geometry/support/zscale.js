@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../core/unitUtils","./spatialReferenceUtils"],function(g,h,k){g.getGeometryZScaler=function(l,f,e){if(null==f||null==e||e.vcsWkid||k.equals(f,e))return null;f=h.getMetersPerVerticalUnitForSR(f);e=h.getMetersPerVerticalUnitForSR(e);const b=f/e;if(1===b)return null;switch(l){case "point":case "esriGeometryPoint":return a=>{a&&null!=a.z&&(a.z*=b)};case "polyline":case "esriGeometryPolyline":return a=>{if(a)for(const c of a.paths)for(const d of c)2<d.length&&(d[2]*=b)};case "polygon":case "esriGeometryPolygon":return a=>
+{if(a)for(const c of a.rings)for(const d of c)2<d.length&&(d[2]*=b)};case "multipoint":case "esriGeometryMultipoint":return a=>{if(a)for(const c of a.points)2<c.length&&(c[2]*=b)};case "extent":case "esriGeometryEnvelope":return a=>{a&&null!=a.zmin&&null!=a.zmax&&(a.zmin*=b,a.zmax*=b)};default:return null}};Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

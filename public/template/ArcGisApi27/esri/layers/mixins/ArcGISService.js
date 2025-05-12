@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Logger ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ../support/arcgisLayerUrl".split(" "),function(e,f,c,l,g,n,p,q,m,h){e.ArcGISService=b=>{b=function(k){function d(){return k.apply(this,arguments)||this}f._inherits(d,k);f._createClass(d,[{key:"title",get:function(){if(this._get("title")&&
+"defaults"!==this.originOf("title"))return this._get("title");if(this.url){const a=h.parse(this.url);if(null!=a&&a.title)return a.title}return this._get("title")||""},set:function(a){this._set("title",a)}},{key:"url",set:function(a){this._set("url",h.sanitizeUrl(a,l.getLogger(this)))}}]);return d}(b);c.__decorate([g.property()],b.prototype,"title",null);c.__decorate([g.property({type:String})],b.prototype,"url",null);return b=c.__decorate([m.subclass("esri.layers.mixins.ArcGISService")],b)};Object.defineProperty(e,
+Symbol.toStringTag,{value:"Module"})});

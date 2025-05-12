@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/lang ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/accessorSupport/decorators/enumeration ../../../core/accessorSupport/decorators/subclass ./bandIndexUtils ./BaseFunctionArguments".split(" "),function(e,b,h,k,a,l,m,n,p){var c;a=c=function(f){function d(){var g=f.apply(this,arguments)||this;g.method="custom";return g}e._inherits(d,f);d.prototype.clone=
+function(){return new c({method:this.method,bandIndexes:this.bandIndexes,raster:h.clone(this.raster)})};return e._createClass(d)}(p);b.__decorate([k.property({json:{type:String,write:!0}})],a.prototype,"bandIndexes",void 0);b.__decorate([l.enumeration(n.bandIndexMethodMap)],a.prototype,"method",void 0);return a=c=b.__decorate([m.subclass("esri.layers.support.rasterFunctions.BandArithmeticFunctionArguments")],a)});

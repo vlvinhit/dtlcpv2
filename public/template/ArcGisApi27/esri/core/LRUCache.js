@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../chunks/_rollupPluginBabelHelpers","./MemCache"],function(e,f,g){let k=function(){function d(a,c){this._storage=new g.MemCacheStorage;this.name=this.id="";this.size=0;this._storage.maxSize=a;this._storage.register(this);c&&this._storage.registerRemoveFunc("",c)}var b=d.prototype;b.destroy=function(){this._storage.deregister(this);this._storage.destroy()};b.put=function(a,c,h=1){this._storage.put(this,a,c,h,1)};b.pop=function(a){return this._storage.pop(this,a)};b.get=function(a){return this._storage.get(this,
+a)};b.clear=function(){this._storage.clearAll()};b.resetHitRate=function(){};f._createClass(d,[{key:"maxSize",get:function(){return this._storage.maxSize},set:function(a){this._storage.maxSize=a}}]);return d}();e.LRUCache=k;Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})});

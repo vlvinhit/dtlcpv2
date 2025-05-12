@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers"],function(c,e){let g=function(){function d(a){this._gain=a;this.filteredDelta=this.lastValue=void 0}var b=d.prototype;b.update=function(a){if(this.hasLastValue()){const f=this.computeDelta(a);this._updateDelta(f)}this.lastValue=a};b.reset=function(){this.filteredDelta=this.lastValue=void 0};b.hasLastValue=function(){return void 0!==this.lastValue};b.hasFilteredDelta=function(){return void 0!==this.filteredDelta};b.computeDelta=function(a){return void 0===
+this.lastValue?NaN:a-this.lastValue};b._updateDelta=function(a){this.filteredDelta=void 0!==this.filteredDelta?(1-this._gain)*this.filteredDelta+this._gain*a:a};return e._createClass(d)}();c.FilteredFiniteDifference=g;Object.defineProperty(c,Symbol.toStringTag,{value:"Module"})});

@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../chunks/_rollupPluginBabelHelpers ../chunks/tslib.es6 ./Accessor ./Handles ./accessorSupport/decorators/property ./accessorSupport/decorators/subclass ./support/WatchUpdatingTracking".split(" "),function(b,d,e,m,n,h,k,p){const l=a=>{a=function(c){function f(){var g=c.apply(this,arguments)||this;g._handles=new n;g._updatingHandles=new p.WatchUpdatingTracking;return g}d._inherits(f,c);f.prototype.destroy=function(){this.destroyed||(this._handles.destroy(),this._updatingHandles.destroy())};
+d._createClass(f,[{key:"handles",get:function(){return this._handles}},{key:"updatingHandles",get:function(){return this._updatingHandles}}]);return f}(a);e.__decorate([h.property({readOnly:!0})],a.prototype,"handles",null);e.__decorate([h.property({readOnly:!0})],a.prototype,"updatingHandles",null);return a=e.__decorate([k.subclass("esri.core.HandleOwner")],a)};b.HandleOwner=function(a){function c(){return a.apply(this,arguments)||this}d._inherits(c,a);return d._createClass(c)}(l(m));b.HandleOwner=
+e.__decorate([k.subclass("esri.core.HandleOwner")],b.HandleOwner);b.HandleOwnerMixin=l;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

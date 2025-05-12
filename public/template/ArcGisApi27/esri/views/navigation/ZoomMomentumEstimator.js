@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers","./Momentum","./MomentumEstimator"],function(h,b,k,m){let l=function(f){function c(a,d,e){return f.call(this,a,d,e)||this}b._inherits(c,f);var g=c.prototype;g.value=function(a){a=b._get(b._getPrototypeOf(c.prototype),"value",this).call(this,a);return Math.exp(a)};g.valueDelta=function(a,d){const e=b._get(b._getPrototypeOf(c.prototype),"value",this).call(this,a);a=b._get(b._getPrototypeOf(c.prototype),"value",this).call(this,a+d);return Math.exp(a-
+e)};return b._createClass(c)}(k.Momentum);k=function(f){function c(a=2.5,d=.01,e=.95,n=12){return f.call(this,a,d,e,n)||this}b._inherits(c,f);var g=c.prototype;g.add=function(a,d){b._get(b._getPrototypeOf(c.prototype),"add",this).call(this,Math.log(a),d)};g.createMomentum=function(a,d,e){return new l(a,d,e)};return b._createClass(c)}(m.MomentumEstimator);h.ZoomMomentum=l;h.ZoomMomentumEstimator=k;Object.defineProperty(h,Symbol.toStringTag,{value:"Module"})});

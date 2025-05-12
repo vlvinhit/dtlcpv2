@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../../chunks/_rollupPluginBabelHelpers ../core/shaderTechnique/ReloadableShaderModule ../core/shaderTechnique/ShaderTechnique ./DefaultVertexAttributeLocations ./Program ../../../../chunks/SSAO.glsl ../../../webgl/renderState".split(" "),function(h,d,e,k,b,l,m,n,f){b=function(c){function a(){return c.apply(this,arguments)||this}e._inherits(a,c);var g=a.prototype;g.initializeProgram=function(p){return new m.Program(p.rctx,a.shader.get().build(),l.Default3D)};g.initializePipeline=
+function(){return f.makePipelineState({colorWrite:f.defaultColorWriteParams})};return e._createClass(a)}(b.ShaderTechnique);b.shader=new k.ReloadableShaderModule(n.SSAO,()=>new Promise((c,a)=>h(["../shaders/SSAO.glsl"],c,a)));d.SSAOTechnique=b;Object.defineProperty(d,Symbol.toStringTag,{value:"Module"})});

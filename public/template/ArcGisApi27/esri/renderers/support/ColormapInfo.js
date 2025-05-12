@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../Color ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(e,b,h,a,d,k,m,n,l){a=function(f){function g(){var c=f.apply(this,arguments)||this;c.value=null;c.label=null;c.color=null;return c}e._inherits(g,f);return e._createClass(g)}(a.JSONSupport);b.__decorate([d.property({type:Number,
+json:{write:!0}})],a.prototype,"value",void 0);b.__decorate([d.property({type:String,json:{write:!0}})],a.prototype,"label",void 0);b.__decorate([d.property({type:h,json:{type:[k.Integer],write:!0}})],a.prototype,"color",void 0);return a=b.__decorate([l.subclass("esri.renderers.support.ColormapInfo")],a)});

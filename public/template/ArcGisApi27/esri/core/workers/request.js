@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../Error"],function(l,m){let g;l.execute=function(f,c){let a=c.responseType;a?"array-buffer"!==a&&"blob"!==a&&"json"!==a&&"native"!==a&&"native-request-init"!==a&&"text"!==a&&(a="text"):a="json";c.responseType=a;const n=c.signal;delete c.signal;return globalThis.invokeStaticMessage("request",{url:f,options:c},{signal:n}).then(async b=>{let e,h,k;if(b.data)if(b.data instanceof ArrayBuffer){if("json"===a||"text"===a||"blob"===a){var d=new Blob([b.data]);if("json"===a||"text"===a)if(g||
+(g=new FileReaderSync),k=g.readAsText(d),"json"===a){try{e=JSON.parse(k||null)}catch(p){throw new m("request:server",p.message,{...p,url:f,requestOptions:c});}if(e.error)throw new m("request:server",e.error.message,{...e.error,url:f,requestOptions:c});}}}else"native"===a&&(b.data.signal=n,h=await fetch(b.data.url,b.data),b.httpStatus=h.status);switch(a){case "blob":break;case "json":d=e;break;case "native":d=h;break;case "text":d=k;break;default:d=b.data}return{data:d,httpStatus:b.httpStatus,requestOptions:c,
+ssl:b.ssl,url:f}})};Object.defineProperty(l,Symbol.toStringTag,{value:"Module"})});

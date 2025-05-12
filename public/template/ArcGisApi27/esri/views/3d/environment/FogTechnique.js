@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../chunks/_rollupPluginBabelHelpers ../../../chunks/Fog.glsl ../webgl-engine/core/shaderTechnique/ReloadableShaderModule ../webgl-engine/core/shaderTechnique/ShaderTechnique ../webgl-engine/core/shaderTechnique/ShaderTechniqueConfiguration ../webgl-engine/lib/DefaultVertexAttributeLocations ../webgl-engine/lib/Program ../../webgl/enums ../../webgl/renderState".split(" "),function(m,g,h,n,p,b,q,r,t,c,e){b=function(d){function a(f){var k;return k=d.call(this,f,new q.ShaderTechniqueConfiguration,
+()=>k.destroy())||this}h._inherits(a,d);var l=a.prototype;l.initializeProgram=function(f){return new t.Program(f.rctx,a.shader.get().build(),r.Default3D)};l.initializePipeline=function(){return e.makePipelineState({blending:e.separateBlendingParams(c.BlendFactor.SRC_ALPHA,c.BlendFactor.ZERO,c.BlendFactor.ONE_MINUS_SRC_ALPHA,c.BlendFactor.ONE),colorWrite:e.defaultColorWriteParams})};return h._createClass(a)}(b.ShaderTechnique);b.shader=new p.ReloadableShaderModule(n.Fog,()=>new Promise((d,a)=>m(["./Fog.glsl"],
+d,a)));g.FogTechnique=b;Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

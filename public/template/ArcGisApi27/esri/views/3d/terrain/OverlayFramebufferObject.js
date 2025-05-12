@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../core/maybe ../../webgl/enums ../../webgl/FramebufferObject ../../webgl/TextureDescriptor".split(" "),function(f,h,k,g,l,m){let n=function(){function d(a,e){this._fbo=null;const c=new m.TextureDescriptor;c.wrapMode=g.TextureWrapMode.CLAMP_TO_EDGE;c.samplingMode=g.TextureSamplingMode.LINEAR_MIPMAP_LINEAR;c.hasMipmap=e;c.maxAnisotropy=8;this._fbo=new l.FramebufferObject(a,c)}var b=d.prototype;b.dispose=function(){this._fbo=k.disposeMaybe(this._fbo)};
+b.getTexture=function(){return this._fbo?.colorTexture};b.isValid=function(){return null!=this._fbo};b.resize=function(a,e){this._fbo?.resize(a,e)};b.bind=function(a){a.bindFramebuffer(this._fbo)};b.generateMipMap=function(){const a=this._fbo?.colorTexture;a?.descriptor.hasMipmap&&a.generateMipmap()};b.disposeRenderTargetMemory=function(){this._fbo?.resize(0,0)};h._createClass(d,[{key:"gpuMemoryUsage",get:function(){return this._fbo?.gpuMemoryUsage??0}}]);return d}();f.OverlayFramebufferObject=n;
+Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

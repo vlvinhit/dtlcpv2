@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../../chunks/_rollupPluginBabelHelpers","../shaderTechnique/BindType"],function(b,g,c){let l=function(){function d(a,h,e,f,k=null){this.name=a;this.type=h;this.arraySize=k;this.bind={[c.BindType.Pass]:null,[c.BindType.Draw]:null};null!=e&&null!=f&&(this.bind[e]=f)}d.prototype.equals=function(a){return this.type===a.type&&this.name===a.name&&this.arraySize===a.arraySize};return g._createClass(d)}();b.Uniform=l;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

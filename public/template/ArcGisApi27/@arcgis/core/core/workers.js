@@ -1,0 +1,5 @@
+/*
+All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+*/
+export{initialize,open,openWithPorts,terminate}from"./workers/workers.js";export{default as Connection}from"./workers/Connection.js";export{default as RemoteClient}from"./workers/RemoteClient.js";import"./Error.js";import"./lang.js";import"../chunks/typedArrayUtil.js";import"../chunks/Logger.js";import"../config.js";import"../chunks/object.js";import"../chunks/string.js";import"./promiseUtils.js";import"../chunks/maybe.js";import"../kernel.js";import"./urlUtils.js";import"../chunks/assets.js";import"../request.js";import"../intl.js";import"../chunks/date.js";import"../chunks/jsonMap.js";import"../chunks/locale.js";import"../chunks/datetime.js";import"../chunks/number.js";import"../chunks/messages.js";import"../chunks/nextTick.js";import"../chunks/utils.js";import"../chunks/Queue.js";import"../chunks/tracking.js";import"../chunks/SimpleObservable.js";import"../chunks/ObservableBase.js";

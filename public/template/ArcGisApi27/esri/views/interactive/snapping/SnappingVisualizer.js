@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../core/handleUtils ./hints/IntersectionSnappingHint ./hints/LineSnappingHint ./hints/ParallelSnappingHint ./hints/PointSnappingHint ./hints/RightAngleSnappingHint".split(" "),function(f,h,k,l,m,n,p,q){let r=function(){function g(){}var e=g.prototype;e.draw=function(a,c){a=this._getUniqueHints(a);a=this.sortUniqueHints(a);const d=[];for(const b of a)b instanceof l.IntersectionSnappingHint&&d.push(this.visualizeIntersectionPoint(b,c)),
+b instanceof m.LineSnappingHint&&d.push(this.visualizeLine(b,c)),b instanceof n.ParallelSnappingHint&&d.push(this.visualizeParallelSign(b,c)),b instanceof q.RightAngleSnappingHint&&d.push(this.visualizeRightAngleQuad(b,c)),b instanceof p.PointSnappingHint&&d.push(this.visualizePoint(b,c));return k.handlesGroup(d)};e.sortUniqueHints=function(a){return a};e._getUniqueHints=function(a){const c=[];for(const d of a){a=!0;for(const b of c)if(d.equals(b)){a=!1;break}a&&c.push(d)}return c};return h._createClass(g)}();
+f.SnappingVisualizer=r;Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

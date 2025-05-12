@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../../chunks/_rollupPluginBabelHelpers ../../../../../core/MemCache ../../lib/VertexArrayObject ../../../../webgl/BufferObject ../../../../webgl/enums".split(" "),function(g,k,h,l,m,n){function p(d,e){if(e===h.RemoveMode.ALL)d.forEach(a=>a.dispose());else return e=d.pop(),d=d.length*e.byteSize,e.dispose(),d}const q=h.MIN_PRIORITY+1;let r=function(){function d(a,b,c){this._rctx=a;this._locations=b;this._layout=c;this._cache=a.newCache("VaoCache",p)}var e=d.prototype;e.dispose=
+function(){this._cache.destroy()};e.newVao=function(a){var b=a.toString();const c=this._cache.pop(b);if(null!=c){const f=c.pop();0<c.length&&this._cache.put(b,c,a*c.length,q);return f}b=new l.VertexArrayObject(this._rctx,this._locations,{geometry:this._layout},{geometry:m.BufferObject.createVertex(this._rctx,n.Usage.STATIC_DRAW)});b.vertexBuffers.geometry.setSize(a);return b};e.deleteVao=function(a){if(null==a)return null;const b=a.byteSize,c=b.toString(),f=this._cache.pop(c);null!=f?(f.push(a),this._cache.put(c,
+f,b*f.length,-1)):this._cache.put(c,[a],b,-1);return null};return k._createClass(d)}();g.VaoCache=r;Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

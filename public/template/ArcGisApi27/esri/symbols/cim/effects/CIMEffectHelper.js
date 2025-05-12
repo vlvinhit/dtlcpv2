@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../geometry/GeometryCursor ../../../geometry/geometryCursorCollectUtils ../CIMEffects ../CIMOperators ../CIMSymbolHelper".split(" "),function(g,n,p,q,h,k,l){const r=96/72;let t=function(){function f(){}f.executeEffects=function(b,a,e,c){const d=l.getEffectsInflateSize(b);a=new h.SimpleEffectCursor(a);for(const m of b)(b=k.getEffectOperator(m))&&(a=b.execute(a,m,r,e,c,d));return a};f.applyEffects=function(b,a,e){if(!b)return a;var c=l.getEffectsInflateSize(b);
+a=new h.SimpleEffectCursor(p.GeometryCursor.fromJSONCIM(a));for(var d of b)(b=k.getEffectOperator(d))&&(a=b.execute(a,d,1,null,e,c));c=[];for(d=null;e=a.next();)c.push(...q.collectMultipath(e)),d=e.geometryType;return 0===c.length||null===d?null:"esriGeometryPolygon"===d?{rings:c}:{paths:c}};return n._createClass(f)}();g.CIMEffectHelper=t;Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

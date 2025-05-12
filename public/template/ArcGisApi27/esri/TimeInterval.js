@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("./chunks/_rollupPluginBabelHelpers ./chunks/tslib.es6 ./core/Clonable ./core/JSONSupport ./core/timeUtils ./core/accessorSupport/decorators/property ./core/accessorSupport/ensureType ./core/arrayUtils ./core/has ./core/accessorSupport/decorators/enumeration ./core/accessorSupport/decorators/subclass ./portal/timeUnitKebabDictionary".split(" "),function(e,c,a,g,h,k,p,q,r,l,m,n){a=function(f){function d(b){b=f.call(this,b)||this;b.unit="milliseconds";b.value=0;return b}e._inherits(d,f);d.prototype.toMilliseconds=
+function(){return h.convertTime(this.value,this.unit,"milliseconds")};return e._createClass(d)}(a.ClonableMixin(g.JSONSupport));c.__decorate([l.enumeration(n.timeUnitKebabDictionary,{nonNullable:!0})],a.prototype,"unit",void 0);c.__decorate([k.property({type:Number,json:{write:!0},nonNullable:!0})],a.prototype,"value",void 0);return a=c.__decorate([m.subclass("esri.TimeInterval")],a)});

@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../core/has"],function(b,d){function g(a,c,e={}){c=c===b.ContextType.WEBGL1?["webgl","experimental-webgl","webkit-3d","moz-webgl"]:["webgl2"];for(const f of c)if(c=a.getContext(f,e))return c;return null}function h(a){if("3d"===a)return[b.ContextType.WEBGL2];a=d("esri-force-webgl");return a===b.ContextType.WEBGL1||a===b.ContextType.WEBGL2?[a]:d("mac")&&d("chrome")?[b.ContextType.WEBGL1,b.ContextType.WEBGL2]:[b.ContextType.WEBGL2,b.ContextType.WEBGL1]}b.ContextType=void 0;(function(a){a[a.WEBGL1=
+1]="WEBGL1";a[a.WEBGL2=2]="WEBGL2"})(b.ContextType||(b.ContextType={}));b.createContext=g;b.createContextForView=function(a,c,e={}){a=h(a);for(const f of a)if(a=g(c,f,e))return a;return null};b.getContextTypes=h;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

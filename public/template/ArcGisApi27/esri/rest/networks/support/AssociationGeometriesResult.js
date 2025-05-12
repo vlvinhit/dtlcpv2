@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/JSONSupport ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/subclass ./Association".split(" "),function(d,c,a,e,l,m,n,h,k){a=function(f){function g(b){b=f.call(this,b)||this;b.maxGeometryCountExceeded=!1;b.associations=[];return b}d._inherits(g,f);return d._createClass(g)}(a.JSONSupport);
+c.__decorate([e.property({type:Boolean,json:{write:!0}})],a.prototype,"maxGeometryCountExceeded",void 0);c.__decorate([e.property({type:[k],json:{write:!0}})],a.prototype,"associations",void 0);return a=c.__decorate([h.subclass("esri.rest.networks.support.AssociationGeometriesResult")],a)});

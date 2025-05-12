@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../../../webgl/AppleAmdDriverHelper","../../../webgl/RenderingContext"],function(h,c,l,f){f=function(k){function b(a,g,d){a=k.call(this,a,g)||this;a.newCache=d;a._refCount=1;a._appleAmdDriverHelper=null;return a}c._inherits(b,k);var e=b.prototype;e.destroy=function(){0<--this._refCount||this.dispose()};e.ref=function(){++this._refCount};e.dispose=function(){c._get(c._getPrototypeOf(b.prototype),"dispose",this).call(this);this._appleAmdDriverHelper?.dispose()};
+e.bindTechnique=function(a,g,d,m){this.useProgram(a.program);a.bindPipelineState(this,d?.slot,!!m);a.program.bindPass(g,d);return a.program};c._createClass(b,[{key:"appleAmdDriverHelper",get:function(){return this.driverTest.drawArraysRequiresIndicesTypeReset.result?this._appleAmdDriverHelper=this._appleAmdDriverHelper??new l.AppleAmdDriverHelper(this):null}},{key:"test",get:function(){return this.programCache.test}}]);return b}(f.RenderingContext);h.RenderingContext=f;Object.defineProperty(h,Symbol.toStringTag,
+{value:"Module"})});

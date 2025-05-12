@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/quantityUtils ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/subclass ./SketchTooltipInfo".split(" "),function(a,e,c,h,d,m,n,p,k,l){a.ReshapeEdgeOffsetTooltipInfo=function(f){function g(b){b=f.call(this,b)||this;b.type="reshape-edge-offset";b.distance=h.zeroMeters;b.area=null;
+b.totalLength=null;return b}e._inherits(g,f);return e._createClass(g)}(l.SketchTooltipInfo);c.__decorate([d.property()],a.ReshapeEdgeOffsetTooltipInfo.prototype,"type",void 0);c.__decorate([d.property()],a.ReshapeEdgeOffsetTooltipInfo.prototype,"distance",void 0);c.__decorate([d.property()],a.ReshapeEdgeOffsetTooltipInfo.prototype,"area",void 0);c.__decorate([d.property()],a.ReshapeEdgeOffsetTooltipInfo.prototype,"totalLength",void 0);a.ReshapeEdgeOffsetTooltipInfo=c.__decorate([k.subclass("esri.views.interactive.tooltip.ReshapeEdgeOffsetTooltipInfo")],
+a.ReshapeEdgeOffsetTooltipInfo);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

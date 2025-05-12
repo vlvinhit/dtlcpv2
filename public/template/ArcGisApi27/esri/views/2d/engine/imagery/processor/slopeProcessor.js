@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["./utils"],function(e){const h={vsPath:"raster/rfx/vs",fsPath:"raster/rfx/slope",attributes:new Map([["a_position",0],["a_texcoord",1]])};return{createProgram:function(b,a){const {painter:c,rasterFunction:d}=b;({slopeType:b}=d.parameters);return c.materialManager.getProgram(h,"percent-rise"===b?["percentRise"]:[])},bindTextureAndUniforms:function(b,a,c){e.setSingleImageTextures(b,a,c);e.setCoordsAndTransforms(a);const {width:d,height:k,resolution:f}=c,{zFactor:l,slopeType:g,pixelSizePower:m,
+pixelSizeFactor:n}=b.rasterFunction.parameters;a.setUniform2fv("u_srcImageSize",[d,k]);a.setUniform2fv("u_cellSize",[f,f]);a.setUniform1f("u_zFactor",l);a.setUniform1f("u_pixelSizePower","adjusted"===g?m:0);a.setUniform1f("u_pixelSizeFactor","adjusted"===g?n:0)}}});

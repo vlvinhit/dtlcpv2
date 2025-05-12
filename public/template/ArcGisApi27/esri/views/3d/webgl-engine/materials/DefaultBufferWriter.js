@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../../chunks/_rollupPluginBabelHelpers","../lib/VertexAttribute","./internal/bufferWriterUtils"],function(b,e,f,g){let n=function(){function c(a){this.vertexBufferLayout=a}var d=c.prototype;d.elementCount=function(a){return a.indices.get(f.VertexAttribute.POSITION).length};d.write=function(a,h,k,l,m){g.writeDefaultAttributes(k,this.vertexBufferLayout,a,h,l,m)};return e._createClass(c)}();b.DefaultBufferWriter=n;Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

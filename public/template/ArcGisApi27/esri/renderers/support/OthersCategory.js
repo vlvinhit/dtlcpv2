@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../Color ../../core/Clonable ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(a,e,b,f,k,l,d,n,p,q,m){a.OthersCategory=function(g){function h(){var c=g.apply(this,arguments)||this;c.color=new f([0,0,0,0]);c.label=null;c.threshold=0;return c}e._inherits(h,g);
+return e._createClass(h)}(k.ClonableMixin(l.JSONSupport));b.__decorate([d.property({type:f,json:{write:!0}})],a.OthersCategory.prototype,"color",void 0);b.__decorate([d.property({type:String,json:{write:!0}})],a.OthersCategory.prototype,"label",void 0);b.__decorate([d.property({type:Number,range:{min:0,max:1},json:{write:!0}})],a.OthersCategory.prototype,"threshold",void 0);a.OthersCategory=b.__decorate([m.subclass("esri.renderers.support.OthersCategory")],a.OthersCategory);Object.defineProperty(a,
+Symbol.toStringTag,{value:"Module"})});

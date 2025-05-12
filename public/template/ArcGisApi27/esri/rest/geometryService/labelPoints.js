@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../request","../../geometry/support/jsonUtils","../utils"],function(f,k,l,g){f.labelPoints=function(a,h,b){var d=h.map(c=>c.toJSON());const e=h[0].spatialReference;a=g.parseUrl(a);d={...a.query,f:"json",sr:e.wkid??JSON.stringify(e.toJSON()),polygons:JSON.stringify(d)};b=g.asValidOptions(d,b);return k(a.path+"/labelPoints",b).then(({data:c})=>(c.labelPoints||[]).map(m=>l.fromJSON(m).set({spatialReference:e})))};Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

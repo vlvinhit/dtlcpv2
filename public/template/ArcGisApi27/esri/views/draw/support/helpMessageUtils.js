@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../arcade/functions/centroid","../../../core/unitUtils","../../../chunks/vec3","../../../chunks/vec3f64"],function(g,l,h,m,n){const d=n.create();g.getDrawHelpMessage=function(b,a,c){switch(b){case "point":case "multipoint":return"point";case "polyline":return 2>(null!=a&&"polyline"===a.type&&a.paths.length?a.paths[0].length:0)?"polylineZeroVertices":"polylineOneVertex";case "polygon":return b=null!=a&&"polygon"===a.type&&a.rings.length?a.rings[0].length:0,3>b?"polylineZeroVertices":
+4>b?"polygonOneVertex":"polygonTwoVertices";case "mesh":if("mesh"===a?.type&&"3d"===c?.type){({renderCoordsHelper:b}=c);({camera:c}=c.state);var {width:p,height:q,zmin:r,zmax:t,center:e,spatialReference:f}=a.extent;a=(t??0)-(r??0);var k=h.getMetersPerUnitForSR(f),u=l.getMetersPerVerticalUnitForSR(f),v=h.getMetersPerUnitForSR(b.spatialReference);a=Math.max(p*k,q*k,a*u)/v;m.set(d,e.x,e.y,e.z??0);b.toRenderCoords(d,f,d);b=a/c.computeScreenPixelSizeAt(d);b=b>1*c.width?"meshTooClose":20>b?"meshTooFar":
+"mesh"}else b=void 0;return b}};Object.defineProperty(g,Symbol.toStringTag,{value:"Module"})});

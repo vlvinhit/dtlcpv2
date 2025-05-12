@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../Color ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/enumeration ../../core/accessorSupport/decorators/subclass ../../symbols/support/materialUtils ./Background".split(" "),function(f,c,l,m,g,r,t,n,p,q,a){var d;g={...q.colorAndTransparencyProperty,nonNullable:!0};a=d=function(h){function e(b){b=h.call(this,b)||
+this;b.type="color";b.color=new l([0,0,0,1]);return b}f._inherits(e,h);var k=e.prototype;k.clone=function(){return new d(this.cloneProperties())};k.cloneProperties=function(){return{color:this.color.clone()}};return f._createClass(e)}(a);c.__decorate([n.enumeration({color:"color"},{readOnly:!0})],a.prototype,"type",void 0);c.__decorate([m.property(g)],a.prototype,"color",void 0);return a=d=c.__decorate([p.subclass("esri.webscene.background.ColorBackground")],a)});

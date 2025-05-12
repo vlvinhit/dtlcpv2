@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ./rasterEnums".split(" "),function(e,b,a,c,f,m,n,l,d){a=function(g){function h(){var k=g.apply(this,arguments)||this;k.pixelType="unknown";return k}e._inherits(h,g);return e._createClass(h)}(a.JSONSupport);b.__decorate([c.property({type:String,
+json:{write:!0}})],a.prototype,"name",void 0);b.__decorate([c.property({type:String,json:{write:!0}})],a.prototype,"description",void 0);b.__decorate([c.property({type:f.Integer,json:{type:f.Integer,write:!0,name:"_object_id"}})],a.prototype,"id",void 0);b.__decorate([c.property({type:String,json:{type:d.pixelTypeKebabDict.jsonValues,read:d.pixelTypeKebabDict.read,write:d.pixelTypeKebabDict.write}})],a.prototype,"pixelType",void 0);b.__decorate([c.property({type:String,json:{write:!0}})],a.prototype,
+"type",void 0);return a=b.__decorate([l.subclass("esri.layers.support.RasterFunctionInfo")],a)});

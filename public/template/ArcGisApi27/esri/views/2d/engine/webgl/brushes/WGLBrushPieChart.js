@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../../../../../chunks/_rollupPluginBabelHelpers","../enums","./WGLGeometryBrushMarker","../techniques/utils","../../../../webgl/enums"],function(d,h,k,l,m){return function(e){function c(){return e.apply(this,arguments)||this}d._inherits(c,e);var f=c.prototype;f.supportsSymbology=function(a){return a===h.WGLSymbologyType.PIE_CHART};f._drawMarkers=function(a,g,b,n,p,q,r){({context:g}=a);({rendererInfo:a}=a);({rendererSchema:a}=a);l.assertRendererSchema(a,"pie-chart");b.setUniform4fv("u_colors",
+a.colors);b.setUniform4fv("u_defaultColor",a.defaultColor);b.setUniform4fv("u_othersColor",a.othersColor);b.setUniform4fv("u_outlineColor",a.outlineColor);b.setUniform1f("u_donutRatio",a.holePercentage);b.setUniform1f("u_sectorThreshold",a.sectorThreshold);b.setUniform1f("u_outlineWidth",a.outlineWidth);g.drawElements(n,p,m.DataType.UNSIGNED_INT,q)};return d._createClass(c)}(k)});

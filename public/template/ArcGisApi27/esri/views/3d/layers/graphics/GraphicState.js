@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../chunks/_rollupPluginBabelHelpers ../../../../chunks/tslib.es6 ../../../../core/Evented ../../../../core/accessorSupport/decorators/property ../../../../core/accessorSupport/ensureType ../../../../core/arrayUtils ../../../../core/has ../../../../core/accessorSupport/decorators/subclass".split(" "),function(a,e,c,h,d,l,m,n,k){a.GraphicState=function(f){function g(b){b=f.call(this,b)||this;b.tracking=!1;b.displaying=!1;b.isDraped=!1;return b}e._inherits(g,f);return e._createClass(g)}(h.EventedAccessor);
+c.__decorate([d.property({constructOnly:!0})],a.GraphicState.prototype,"graphic",void 0);c.__decorate([d.property()],a.GraphicState.prototype,"tracking",void 0);c.__decorate([d.property()],a.GraphicState.prototype,"displaying",void 0);c.__decorate([d.property()],a.GraphicState.prototype,"isDraped",void 0);a.GraphicState=c.__decorate([k.subclass("esri.views.3d.layers.graphics.GraphicState")],a.GraphicState);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

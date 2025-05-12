@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../../../chunks/_rollupPluginBabelHelpers","../../../chunks/Jpg","../../../chunks/Zlib"],function(q,r,t){return function(){function n(){}n.decode=function(c,h=!1){const k=new Uint8Array(c);c=new r.JpegImage;c.parse(k);const {width:e,height:f,numComponents:u,eof:p}=c,l=c.getData(e,f,!0),m=e*f;c=null;let a=0,g=0,d=0;if(!h&&p<k.length-1)try{var b=(new t.Zlib(k.subarray(p))).getBytes();c=new Uint8Array(m);for(a=h=0;a<b.length;a++)for(d=7;0<=d;d--)c[h++]=b[a]>>d&1}catch{}if(1===u&&l.length===
+e*f)b=new Uint8Array(l.buffer),b=[b,b,b];else{b=[];for(a=0;3>a;a++)b.push(new Uint8Array(m));for(g=d=0;g<m;g++)for(a=0;3>a;a++)b[a][g]=l[d++]}return{width:e,height:f,pixels:b,mask:c}};return q._createClass(n)}()});

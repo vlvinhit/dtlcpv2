@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers","../../geometry/GeometryCursor","../../geometry/support/TileClipper"],function(f,k,l,g){let b,m=function(){function a(c){this._geometry=c}a.prototype.next=function(){const c=this._geometry;this._geometry=null;return c};return k._createClass(a)}();f.SimpleEffectCursor=m;f.clipCursorToTileExtent=function(a,c){b||(b=new g.TileClipper(0,0,0,1));var d="esriGeometryPolygon"===a.geometryType;const n=d?3:2;b.reset(d?g.GeometryType.Polygon:g.GeometryType.LineString);
+b.setPixelMargin(c+1);b.setExtent(512);let e;for(;a.nextPath();)if(!(a.numPoints<n)){a.nextPoint();c=a.x;e=-a.y;for(b.moveTo(c,e);a.nextPoint();)c=a.x,e=-a.y,b.lineTo(c,e);d&&b.close()}if(d=b.result(!1)){a=l.GeometryCursor.createEmptyOptimizedCIM(a.geometryType);for(const p of d){a.startPath();for(const h of p)a.pushXY(h.x,-h.y)}a.reset();return a}return null};Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

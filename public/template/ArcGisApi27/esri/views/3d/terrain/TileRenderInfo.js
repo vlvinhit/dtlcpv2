@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers","../../../core/PooledArray"],function(a,b,c){let f=b._createClass(function(){this.sourceLod=[0,0,0];this.offset=[0,0];this.scale=1;this.layerIndex=0;this.vtlNeighborInfos=new c({allocator:d=>d||new e})}),e=b._createClass(function(){this.sourceLayerInfo=null;this.sourceLod=[0,0,0];this.offset=[-1,0]});a.TileRenderInfo=f;Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

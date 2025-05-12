@@ -1,0 +1,5 @@
+/*
+All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+*/
+import{R as e,c as t,i as s}from"./watch.js";class r{constructor(s,r){this._owner=r,this._properties={},this._afterDispatchHandle=null;for(const t in s){const r=s[t],o=new e(r,void 0,void 0,2,2);this._properties[t]={pool:o,acquired:[]}}this._afterDispatchHandle=t((()=>this._release()))}destroy(){this._afterDispatchHandle&&(this._afterDispatchHandle.remove(),this._afterDispatchHandle=null);for(const e in this._properties){const t=this._properties[e];for(const e of t.acquired)s(e)||t.pool.release(e);t.pool.destroy(),t.pool=null,t.acquired=null}this._properties=null,this._owner=null}get(e){const t=this._owner._get(e),s=this._properties[e];let r=s.pool.acquire();for(s.acquired.push(r);r===t;)s.acquired.push(r),r=s.pool.acquire();return r}_release(){for(const e in this._properties){const t=this._properties[e];let r=0;for(const e of t.acquired)s(e)?t.acquired[r++]=e:t.pool.release(e);t.acquired.length=r}}}export{r as P};

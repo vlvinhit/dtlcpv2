@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Clonable ../../core/JSONSupport ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(d,b,a,h,e,l,m,n,k){a=function(f){function g(){var c=f.apply(this,arguments)||this;c.opacity=1;c.position=0;return c}d._inherits(g,f);return d._createClass(g)}(a.ClonableMixin(h.JSONSupport));b.__decorate([e.property({type:Number,
+json:{name:"alpha",write:{enabled:!0,isRequired:!0}}})],a.prototype,"opacity",void 0);b.__decorate([e.property({type:Number,json:{write:{enabled:!0,isRequired:!0}}})],a.prototype,"position",void 0);return a=b.__decorate([k.subclass("esri.layers.voxel.VoxelOpacityStop")],a)});

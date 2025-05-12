@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/subclass ./ClipArea".split(" "),function(d,e,g,b,l,m,h,k){b=function(f){function c(a){a=f.call(this,a)||this;a.type="path";a.path=[];return a}d._inherits(c,f);c.prototype.commitVersionProperties=function(){this.commitProperty("path")};return d._createClass(c)}(k);
+e.__decorate([g.property({type:[[[Number]]],json:{write:!0}})],b.prototype,"path",void 0);return b=e.__decorate([h.subclass("esri.views.layers.support.Path")],b)});

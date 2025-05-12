@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../chunks/_rollupPluginBabelHelpers ../../../../chunks/tslib.es6 ../../../../core/Logger ../../../../core/accessorSupport/ensureType ../../../../core/arrayUtils ../../../../core/has ../../../../core/Error ../../../../core/accessorSupport/decorators/subclass ../css ./TooltipContent ../support/TooltipContentWithHelpMessage ../support/TooltipField ../../../../widgets/support/widgetUtils ../../../../widgets/support/jsxFactory".split(" "),function(a,c,f,u,v,w,x,y,g,h,k,l,m,z,d){var n=
+`${h.CONTENT}--draw-mesh`;a.TooltipContentDrawMesh=function(e){function b(){return e.apply(this,arguments)||this}c._inherits(b,e);b.prototype.render=function(){const {elevation:p,tooltipOptions:q}=this.info,{visibleElements:r}=q,t=this._messagesTooltip.sketch;return d.tsx(l.TooltipContentWithHelpMessage,{className:n,helpMessage:this._getHelpMessage()},r.elevation&&d.tsx(m.TooltipField,{title:t.elevation,value:this._formatVerticalLength(p)}))};return c._createClass(b)}(k.TooltipContent);a.TooltipContentDrawMesh=
+f.__decorate([g.subclass("esri.views.interactive.tooltip.content.TooltipContentDrawMesh")],a.TooltipContentDrawMesh);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

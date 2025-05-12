@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/subclass ../../Slider/SliderViewModel".split(" "),function(a,d,b,e,l,m,n,h,k){a.SliderWithDropdownViewModel=function(f){function g(){var c=f.apply(this,arguments)||this;c.utcOffset=null;c.timezonePickerOpen=!1;return c}d._inherits(g,f);return d._createClass(g)}(k);
+b.__decorate([e.property()],a.SliderWithDropdownViewModel.prototype,"utcOffset",void 0);b.__decorate([e.property()],a.SliderWithDropdownViewModel.prototype,"timezonePickerOpen",void 0);a.SliderWithDropdownViewModel=b.__decorate([h.subclass("esri.widgets.Daylight.support.SliderWithDropdownViewModel")],a.SliderWithDropdownViewModel);Object.defineProperty(a,Symbol.toStringTag,{value:"Module"})});

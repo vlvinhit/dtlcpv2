@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/JSONSupport ../../core/lang ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/accessorSupport/decorators/subclass ./Search".split(" "),function(e,f,a,h,k,n,l,m){var c;a=c=function(g){function d(b){b=g.call(this,b)||this;b.search=null;return b}e._inherits(d,g);d.prototype.clone=function(){return new c(h.clone({search:this.search}))};return e._createClass(d)}(a.JSONSupport);
+f.__decorate([k.property({type:m,json:{write:!0}})],a.prototype,"search",void 0);return a=c=f.__decorate([l.subclass("esri.webdoc.applicationProperties.Viewing")],a)});

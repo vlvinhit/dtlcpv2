@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../../../chunks/_rollupPluginBabelHelpers","../../../core/ByteSizeUnit","../layers/support/MemoryManagedLayerView","./LayerPerformanceInfo","../terrain/terrainUtils"],function(d,e,f,g,h){return d._createClass(function(a){this.usedMemory=this.totalMemory=0;this.quality=1;this.edgesMemory=this.terrainMemory=this.load=0;this.layerPerformanceInfos=[];if(null!=a.resourceController){var b=a.resourceController.memoryController;this.totalMemory=(b.maxMemory??0)*e.ByteSizeUnit.MEGABYTES;this.usedMemory=
+Math.round(b.usedMemory*this.totalMemory);this.quality=b.memoryFactor;this.load=a.resourceController.scheduler.load}this.terrainMemory=a.basemapTerrain?.usedMemory??0;b=a._stage&&a._stage.renderView&&a._stage.renderer.edgeView;this.edgesMemory=null!=b?b.usedMemory:0;a.allLayerViews.items.forEach(c=>{(f.isMemoryManagedLayerView(c)||h.isSurfaceLayerView(c))&&this.layerPerformanceInfos.push(new g(c,a))});this.layerPerformanceInfos.sort((c,k)=>k.memory-c.memory)})});

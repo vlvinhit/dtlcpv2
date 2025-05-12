@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass ./BaseImageMeasureResult".split(" "),function(e,b,f,a,l,m,k,c){a=function(g){function h(){var d=g.apply(this,arguments)||this;d.area=null;d.perimeter=null;return d}e._inherits(h,g);return e._createClass(h)}(c.BaseImageMeasureResult);b.__decorate([f.property({type:c.ImageMeasureResultAreaValue,
+json:{read:!0,write:!0}})],a.prototype,"area",void 0);b.__decorate([f.property({type:c.ImageMeasureResultLengthValue,json:{read:!0,write:!0}})],a.prototype,"perimeter",void 0);return a=b.__decorate([k.subclass("esri.rest.support.ImageAreaResult")],a)});

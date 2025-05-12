@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/lang ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/accessorSupport/decorators/subclass ./BaseFunctionArguments".split(" "),function(d,e,h,k,a,l,m){var b;a=b=function(f){function c(){var g=f.apply(this,arguments)||this;g.attributeTableAsRecordSet=null;return g}d._inherits(c,f);c.prototype.clone=function(){return new b({attributeTableAsRecordSet:h.clone(this.attributeTableAsRecordSet)})};
+return d._createClass(c)}(m);e.__decorate([k.property({json:{write:!0}})],a.prototype,"attributeTableAsRecordSet",void 0);return a=b=e.__decorate([l.subclass("esri.layers.support.rasterFunctions.TableFunctionArguments")],a)});

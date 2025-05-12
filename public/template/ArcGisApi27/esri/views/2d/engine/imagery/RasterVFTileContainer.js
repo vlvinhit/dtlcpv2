@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("exports ../../../../chunks/_rollupPluginBabelHelpers ../../../../geometry/support/aaBoundingRect ./BrushVectorField ./RasterVFTile ../webgl/enums ../webgl/TileContainer".split(" "),function(h,b,m,n,p,k,e){e=function(l){function d(){var a=l.apply(this,arguments)||this;a.isCustomTilingScheme=!1;a.symbolTypes=["triangle"];return a}b._inherits(d,l);var f=d.prototype;f.createTile=function(a){const c=this._tileInfoView.getTileBounds(m.create(),a),[g,q]=this._tileInfoView.tileInfo.size,r=this._tileInfoView.getTileResolution(a.level);
+return new p.RasterVFTile(a,r,c[0],c[3],g,q)};f.prepareRenderPasses=function(a){const c=a.registerRenderPass({name:"imagery (vf tile)",brushes:[n],target:()=>this.children.map(g=>g.tileData),drawPhase:k.WGLDrawPhase.MAP});return[...b._get(b._getPrototypeOf(d.prototype),"prepareRenderPasses",this).call(this,a),c]};f.doRender=function(a){this.visible&&a.drawPhase===k.WGLDrawPhase.MAP&&this.symbolTypes.forEach(c=>{a.renderPass=c;b._get(b._getPrototypeOf(d.prototype),"doRender",this).call(this,a)})};
+return b._createClass(d)}(e);h.RasterVFTileContainer=e;Object.defineProperty(h,Symbol.toStringTag,{value:"Module"})});

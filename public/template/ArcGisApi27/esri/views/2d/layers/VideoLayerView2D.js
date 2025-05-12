@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/accessorSupport/decorators/subclass ./LayerView2D ../../layers/LayerView".split(" "),function(e,f,h,b,n,p,k,l,m){b=function(g){function d(){var c=g.apply(this,arguments)||this;c.layer=null;return c}e._inherits(d,g);var a=d.prototype;a.attach=function(){};a.detach=function(){};
+a.supportsSpatialReference=function(c){return!0};a.moveStart=function(){this.requestUpdate()};a.viewChange=function(){this.requestUpdate()};a.moveEnd=function(){this.requestUpdate()};a.update=function(c){};return e._createClass(d)}(l.LayerView2DMixin(m));f.__decorate([h.property()],b.prototype,"layer",void 0);return b=f.__decorate([k.subclass("esri.views.2d.layers.VideoLayerView2D")],b)});

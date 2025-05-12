@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/Logger ../../../core/accessorSupport/ensureType ../../../core/arrayUtils ../../../core/has ../../../core/Error ../../../core/accessorSupport/decorators/subclass ./FeatureLayerView2D ../../layers/OGCFeatureLayerView".split(" "),function(c,e,a,l,m,n,p,f,g,h){a=function(d){function b(){return d.apply(this,arguments)||this}c._inherits(b,d);b.prototype.supportsSpatialReference=function(k){return this.layer.serviceSupportsSpatialReference(k)};
+return c._createClass(b)}(h(g));return a=e.__decorate([f.subclass("esri.views.2d.layers.OGCFeatureLayerView2D")],a)});

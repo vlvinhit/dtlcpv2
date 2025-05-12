@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../chunks/_rollupPluginBabelHelpers","../../core/NestedMap","./Program"],function(f,h,k,l){let n=function(){function d(a){this._rctx=a;this._store=new k.NestedMap}var g=d.prototype;g.dispose=function(){this._store.forEach(a=>a.forEach(b=>b.dispose()));this._store.clear()};g.acquire=function(a,b,c,m){const e=this._store.get(a,b);if(null!=e)return e.ref(),e;c=new l.Program(this._rctx,a,b,c,m);c.ref();this._store.set(a,b,c);return c};h._createClass(d,[{key:"test",get:function(){let a=
+0;this._store.forEach(b=>b.forEach(c=>a+=c.hasGLName?2:1));return{cachedWebGLObjects:a}}}]);return d}();f.ProgramCache=n;Object.defineProperty(f,Symbol.toStringTag,{value:"Module"})});

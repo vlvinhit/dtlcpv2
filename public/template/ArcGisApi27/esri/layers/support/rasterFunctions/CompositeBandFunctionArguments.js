@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../../chunks/_rollupPluginBabelHelpers ../../../chunks/tslib.es6 ../../../core/lang ../../../core/accessorSupport/decorators/property ../../../core/accessorSupport/ensureType ../../../core/accessorSupport/decorators/subclass ../../../core/accessorSupport/decorators/writer ./BaseFunctionArguments".split(" "),function(g,d,l,m,a,n,p,q){var e;a=e=function(h){function f(){var b=h.apply(this,arguments)||this;b.rasters=[];return b}g._inherits(f,h);var k=f.prototype;k.writeRasters=function(b,r){r.rasters=
+b.map(c=>"number"===typeof c||"string"===typeof c?c:c.toJSON())};k.clone=function(){return new e({rasters:l.clone(this.rasters)})};return g._createClass(f)}(q);d.__decorate([m.property({json:{write:!0}})],a.prototype,"rasters",void 0);d.__decorate([p.writer("rasters")],a.prototype,"writeRasters",null);return a=e=d.__decorate([n.subclass("esri.layers.support.rasterFunctions.CompositeBandFunctionArguments")],a)});

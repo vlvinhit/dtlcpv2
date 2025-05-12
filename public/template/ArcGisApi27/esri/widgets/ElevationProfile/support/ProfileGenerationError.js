@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["exports","../../../chunks/_rollupPluginBabelHelpers"],function(b,c){b.ProfileGenerationErrorCause=void 0;(function(a){a.TooComplex="too-complex";a.InvalidGeometry="invalid-geometry";a.InvalidElevationInfo="invalid-elevation-info";a.ElevationQueryError="elevation-query-error"})(b.ProfileGenerationErrorCause||(b.ProfileGenerationErrorCause={}));let g=function(a){function e(f){var d=a.call(this,"profile could not be generated")||this;d.cause=f;d.type="ProfileGenerationError";return d}c._inherits(e,
+a);return c._createClass(e)}(c._wrapNativeSuper(Error));b.ProfileGenerationError=g;b.isProfileGenerationError=function(a){return"ProfileGenerationError"===a.type};Object.defineProperty(b,Symbol.toStringTag,{value:"Module"})});

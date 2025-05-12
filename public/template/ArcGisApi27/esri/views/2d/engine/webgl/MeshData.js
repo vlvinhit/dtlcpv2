@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../../../../chunks/_rollupPluginBabelHelpers"],function(e){return function(){function c(){this.vertexData=new Map;this.vertexCount=0;this.indexData=[]}var d=c.prototype;d.clear=function(){this.vertexData.clear();this.vertexCount=0;this.indexData=[]};d.update=function(b,f,g){for(const a in b)this.vertexData.set(a,b[a]);for(const a in this.vertexData)null===b[a]&&this.vertexData.delete(a);this.vertexCount=f;this.indexData=g};return e._createClass(c)}()});

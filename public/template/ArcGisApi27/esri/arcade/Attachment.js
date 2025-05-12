@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define(["../chunks/_rollupPluginBabelHelpers","./Dictionary"],function(c,e){return function(d){function b(f,g,h,k,l,m,n){var a=d.call(this)||this;a.attachmentUrl=l;a.declaredClass="esri.arcade.Attachment";a.immutable=!1;a.setField("id",f);a.setField("name",g);a.setField("contenttype",h);a.setField("size",k);a.setField("exifinfo",m);a.setField("keywords",n);a.immutable=!0;return a}c._inherits(b,d);b.prototype.deepClone=function(){return new b(this.field("id"),this.field("name"),this.field("contenttype"),
+this.field("size"),this.attachmentUrl,this.field("exifinfo")?.deepClone()??null,this.field("keywords"))};return c._createClass(b)}(e)});

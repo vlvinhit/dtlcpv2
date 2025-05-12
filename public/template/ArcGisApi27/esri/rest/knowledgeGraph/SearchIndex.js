@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.27/esri/copyright.txt for details.
+//>>built
+define("../../chunks/_rollupPluginBabelHelpers ../../chunks/tslib.es6 ../../core/Accessor ../../core/accessorSupport/decorators/property ../../core/accessorSupport/ensureType ../../core/arrayUtils ../../core/has ../../core/accessorSupport/decorators/subclass".split(" "),function(e,c,a,d,k,l,m,h){a=function(f){function g(b){b=f.call(this,b)||this;b.name=null;b.supportedCategory=null;b.analyzers=[];b.searchProperties=new Map;return b}e._inherits(g,f);return e._createClass(g)}(a);c.__decorate([d.property()],
+a.prototype,"name",void 0);c.__decorate([d.property()],a.prototype,"supportedCategory",void 0);c.__decorate([d.property()],a.prototype,"analyzers",void 0);c.__decorate([d.property()],a.prototype,"searchProperties",void 0);return a=c.__decorate([h.subclass("esri.rest.knowledgeGraph.SearchIndex")],a)});
