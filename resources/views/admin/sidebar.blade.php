@@ -44,18 +44,6 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/admin/phieududoanbenh" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Phiếu dự đoán bệnh</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/admin/quanlydiemdich/list" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Quản lý Điểm dịch</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="/admin/quanlytaikhoan" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Quản lý Tài khoản</p>
@@ -83,6 +71,24 @@
                             <a href="/admin/quanlycosochannuoi" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Quản lý Cơ sở chăn nuôi</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/antoansinhhoc" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>An toàn sinh học</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/phieududoanbenh" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Phiếu dự đoán bệnh</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/quanlydiemdich/list" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quản lý Điểm dịch</p>
                             </a>
                         </li>
                         <li class="nav-item">
