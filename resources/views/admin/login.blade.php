@@ -43,6 +43,11 @@
                     <div class="col-5">
                         <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
                     </div>
+                    <div class="col-12 mt-3">
+                        <a href="{{ asset('mobile.apk') }}" class="btn btn-success btn-block" download>
+                            📱 Tải App Android
+                        </a>
+                    </div>
                     <!-- /.col -->
                 </div>
                 @csrf
